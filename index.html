@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>小山輝 様 パーソナライズキャリアページ</title>
+    <title>morich 候補者専用特設ページ</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
@@ -13,8 +13,7 @@
             theme: {
                 extend: {
                     colors: {
-                        morich: '#E60012',
-                        overviewBg: '#F3F4F6'
+                        morichRed: '#E60012',
                     },
                     fontFamily: {
                         sans: ['Noto Sans JP', 'sans-serif'],
@@ -24,78 +23,115 @@
         }
     </script>
     <style>
-        html { scroll-behavior: smooth; }
-        body { font-family: 'Noto Sans JP', sans-serif; }
+        .morich-highlight {
+            border: 2px solid #E60012;
+            background-color: rgba(230, 0, 18, 0.02);
+        }
     </style>
 </head>
-<body class="bg-gray-50 text-gray-800 antialiased">
+<body class="bg-gray-50 text-gray-800 font-sans antialiased min-h-screen">
 
-    <header class="bg-white shadow-sm sticky top-0 z-50">
-        <div class="max-w-7xl mx-auto px-4 py-4 flex flex-col sm:flex-row justify-between items-center gap-4">
-            <div class="flex items-center gap-4">
-                <img src="morich_logo.jpg" alt="morich" class="h-10 object-contain">
-                <div class="border-l-2 border-gray-300 pl-4">
-                    <span class="text-sm text-gray-500 block">Candidate Page</span>
-                    <span class="text-lg font-bold text-gray-800">小山輝 様</span>
-                </div>
+    <header class="bg-white border-b border-gray-200 sticky top-0 z-50 shadow-sm">
+        <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+                <img src="morich_logo.jpg" alt="morich" class="h-10 w-auto object-contain">
+                <span class="text-xs text-gray-400 font-medium tracking-wider uppercase border-l border-gray-200 pl-3 hidden sm:inline">Special Navigation</span>
             </div>
-            <span class="text-xs bg-morich/10 text-morich font-medium px-3 py-1.5 rounded-full">morich 特別選考ご案内</span>
         </div>
     </header>
 
-    <div class="bg-white border-b border-gray-200 py-4 sticky top-[72px] z-40 shadow-sm">
-        <div class="max-w-7xl mx-auto px-4">
-            <p class="text-xs font-bold text-gray-400 uppercase tracking-wider mb-2">ご紹介企業一覧</p>
-            <nav class="flex flex-wrap gap-2">
-                <a href="#company-1" class="text-xs md:text-sm bg-gray-100 hover:bg-morich hover:text-white px-3 py-2 rounded font-medium transition-colors">1. Xpotential</a>
-                <a href="#company-2" class="text-xs md:text-sm bg-gray-100 hover:bg-morich hover:text-white px-3 py-2 rounded font-medium transition-colors">2. VARIETAS</a>
-                <a href="#company-3" class="text-xs md:text-sm bg-gray-100 hover:bg-morich hover:text-white px-3 py-2 rounded font-medium transition-colors">3. tripla</a>
-                <a href="#company-4" class="text-xs md:text-sm bg-gray-100 hover:bg-morich hover:text-white px-3 py-2 rounded font-medium transition-colors">4. ドクターズ</a>
-                <a href="#company-5" class="text-xs md:text-sm bg-gray-100 hover:bg-morich hover:text-white px-3 py-2 rounded font-medium transition-colors">5. リビン・テクノロジーズ</a>
-                <a href="#company-6" class="text-xs md:text-sm bg-gray-100 hover:bg-morich hover:text-white px-3 py-2 rounded font-medium transition-colors">6. アスエネ</a>
-                <a href="#company-7" class="text-xs md:text-sm bg-gray-100 hover:bg-morich hover:text-white px-3 py-2 rounded font-medium transition-colors">7. コクー</a>
-                <a href="#company-8" class="text-xs md:text-sm bg-gray-100 hover:bg-morich hover:text-white px-3 py-2 rounded font-medium transition-colors">8. NEXT ONE</a>
-            </nav>
+    <main class="max-w-6xl mx-auto px-4 py-8">
+        
+        <div class="bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-8 border border-gray-100 text-center sm:text-left">
+            <h1 class="text-2xl md:text-3xl font-black text-gray-900 mb-2">ご相談・ご提案企業一覧</h1>
+            <p class="text-sm text-gray-500">morichが厳選した、あなたに強くお勧めしたいキャリアチャンスのご案内です。</p>
         </div>
-    </div>
 
-    <main class="max-w-7xl mx-auto px-4 py-8 space-y-16">
-
-        <section id="company-1" class="bg-white rounded-xl shadow-sm border border-gray-200 p-6 md:p-10 space-y-8 scroll-mt-36">
-            <div class="space-y-3">
-                <div class="flex flex-wrap gap-2">
-                    <span class="bg-gray-800 text-white text-xs font-bold px-2.5 py-1 rounded">CFO候補</span>
-                    <span class="bg-morich text-white text-xs font-bold px-2.5 py-1 rounded">N-2</span>
-                </div>
-                <h2 class="text-3xl md:text-4xl font-black text-gray-900 tracking-tight">株式会社Xpotential（エクスポテンシャル）</h2>
+        <div class="bg-white rounded-2xl shadow-sm p-6 mb-10 border border-gray-100">
+            <p class="text-xs font-bold uppercase tracking-wider text-morichRed mb-4 flex items-center">
+                <svg class="w-4 h-4 mr-1.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+                企業クイックナビゲーション
+            </p>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3">
+                <a href="#comp-xpotential" class="flex items-center p-3 rounded-xl border border-gray-200 hover:border-morichRed hover:bg-red-50/30 transition group">
+                    <span class="flex items-center justify-center w-6 h-6 rounded-lg bg-gray-100 text-gray-700 text-xs font-bold group-hover:bg-morichRed group-hover:text-white transition mr-3">1</span>
+                    <span class="text-sm font-bold text-gray-800 truncate">株式会社Xpotential</span>
+                </a>
+                <a href="#comp-varietas" class="flex items-center p-3 rounded-xl border border-gray-200 hover:border-morichRed hover:bg-red-50/30 transition group">
+                    <span class="flex items-center justify-center w-6 h-6 rounded-lg bg-gray-100 text-gray-700 text-xs font-bold group-hover:bg-morichRed group-hover:text-white transition mr-3">2</span>
+                    <span class="text-sm font-bold text-gray-800 truncate">株式会社VARIETAS</span>
+                </a>
+                <a href="#comp-tripla" class="flex items-center p-3 rounded-xl border border-gray-200 hover:border-morichRed hover:bg-red-50/30 transition group">
+                    <span class="flex items-center justify-center w-6 h-6 rounded-lg bg-gray-100 text-gray-700 text-xs font-bold group-hover:bg-morichRed group-hover:text-white transition mr-3">3</span>
+                    <span class="text-sm font-bold text-gray-800 truncate">tripla株式会社</span>
+                </a>
+                <a href="#comp-doctors" class="flex items-center p-3 rounded-xl border border-gray-200 hover:border-morichRed hover:bg-red-50/30 transition group">
+                    <span class="flex items-center justify-center w-6 h-6 rounded-lg bg-gray-100 text-gray-700 text-xs font-bold group-hover:bg-morichRed group-hover:text-white transition mr-3">4</span>
+                    <span class="text-sm font-bold text-gray-800 truncate">ドクターズ株式会社</span>
+                </a>
+                <a href="#comp-lvn" class="flex items-center p-3 rounded-xl border border-gray-200 hover:border-morichRed hover:bg-red-50/30 transition group">
+                    <span class="flex items-center justify-center w-6 h-6 rounded-lg bg-gray-100 text-gray-700 text-xs font-bold group-hover:bg-morichRed group-hover:text-white transition mr-3">5</span>
+                    <span class="text-sm font-bold text-gray-800 truncate">リビン・テクノロジーズ株式会社</span>
+                </a>
+                <a href="#comp-asuene" class="flex items-center p-3 rounded-xl border border-gray-200 hover:border-morichRed hover:bg-red-50/30 transition group">
+                    <span class="flex items-center justify-center w-6 h-6 rounded-lg bg-gray-100 text-gray-700 text-xs font-bold group-hover:bg-morichRed group-hover:text-white transition mr-3">6</span>
+                    <span class="text-sm font-bold text-gray-800 truncate">アスエネ株式会社</span>
+                </a>
+                <a href="#comp-cocoo" class="flex items-center p-3 rounded-xl border border-gray-200 hover:border-morichRed hover:bg-red-50/30 transition group">
+                    <span class="flex items-center justify-center w-6 h-6 rounded-lg bg-gray-100 text-gray-700 text-xs font-bold group-hover:bg-morichRed group-hover:text-white transition mr-3">7</span>
+                    <span class="text-sm font-bold text-gray-800 truncate">コクー株式会社</span>
+                </a>
+                <a href="#comp-nx1" class="flex items-center p-3 rounded-xl border border-gray-200 hover:border-morichRed hover:bg-red-50/30 transition group">
+                    <span class="flex items-center justify-center w-6 h-6 rounded-lg bg-gray-100 text-gray-700 text-xs font-bold group-hover:bg-morichRed group-hover:text-white transition mr-3">8</span>
+                    <span class="text-sm font-bold text-gray-800 truncate">株式会社NEXT ONE</span>
+                </a>
             </div>
+        </div>
 
-            <div class="bg-overviewBg rounded-lg p-5">
-                <h3 class="text-xs font-bold text-gray-500 uppercase tracking-wider mb-3">Corporate Overview</h3>
-                <div class="overflow-x-auto">
-                    <table class="w-full text-sm text-left">
-                        <tbody>
-                            <tr class="border-b border-gray-200"><th class="py-2.5 w-32 font-bold text-gray-600">本社住所</th><td class="py-2.5 text-gray-900">〒101-0042 東京都千代田区神田東松下町31番地1</td></tr>
-                            <tr class="border-b border-gray-200"><th class="py-2.5 font-bold text-gray-600">設立</th><td class="py-2.5 text-gray-900">2019年</td></tr>
-                            <tr class="border-b border-gray-200"><th class="py-2.5 font-bold text-gray-600">従業員数</th><td class="py-2.5 text-gray-900"></td></tr>
-                            <tr><th class="py-2.5 font-bold text-gray-600">上場区分</th><td class="py-2.5 text-gray-900">未上場</td></tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
+        <div class="space-y-16">
 
-            <div class="space-y-4">
-                <h3 class="text-lg font-bold border-l-4 border-gray-900 pl-3">企業紹介</h3>
-                <p class="whitespace-pre-wrap text-gray-700 leading-relaxed text-sm md:text-base">日本のセールスイネーブルメント市場を切り拓くパイオニア企業として、注目すべき成長を続ける株式会社Xpotential。創業者の山下貴宏氏がセールスフォースで培ったセールスイネーブルメントの知見をもとに2019年に創業し、わずか数年で大手企業を中心に20社以上への導入実績を築いています。2024年1月にはAI・データサイエンスに強みを持つトキハナツとの経営統合により新体制でスタートし、2025年2月には新社長に下村諒氏を迎えた二人代表取締役体制で更なる飛躍を目指しています。
+            <section id="comp-xpotential" class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden pt-4 scroll-mt-20">
+                <div class="p-6 md:p-8">
+                    <div class="flex flex-wrap gap-2 mb-3">
+                        <span class="px-3 py-1 bg-red-100 text-morichRed text-xs font-bold rounded-full">N-2</span>
+                        <span class="px-3 py-1 bg-gray-100 text-gray-600 text-xs font-bold rounded-full">CFO候補</span>
+                    </div>
+                    <h2 class="text-3xl md:text-4xl font-black text-gray-900 tracking-tight mb-6">株式会社Xpotential（エクスポテンシャル）</h2>
+                    
+                    <div class="bg-slate-50 border border-slate-100 rounded-xl p-4 md:p-5 mb-8">
+                        <p class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-3">Corporate Overview</p>
+                        <div class="overflow-x-auto">
+                            <table class="w-full text-sm text-left">
+                                <tbody class="divide-y divide-gray-200/60">
+                                    <tr>
+                                        <th class="py-3 pr-4 font-bold text-gray-600 w-32 whitespace-nowrap">本社住所</th>
+                                        <td class="py-3 text-gray-800">〒101-0042 東京都千代田区神田東松下町31番地1</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="py-3 pr-4 font-bold text-gray-600 w-32 whitespace-nowrap">設立</th>
+                                        <td class="py-3 text-gray-800">2019年</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="py-3 pr-4 font-bold text-gray-600 w-32 whitespace-nowrap">上場区分</th>
+                                        <td class="py-3 text-gray-800">未上場</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="prose max-w-none text-gray-700 leading-relaxed whitespace-pre-wrap mb-8">日本のセールスイネーブルメント市場を切り拓くパイオニア企業として、注目すべき成長を続ける株式会社Xpotential。創業者の山下貴宏氏がセールスフォースで培ったセールスイネーブルメントの知見をもとに2019年に創業し、わずか数年で大手企業を中心に20社以上への導入実績を築いています。2024年1月にはAI・データサイエンスに強みを持つトキハナツとの経営統合により新体制でスタートし、2025年2月には新社長に下村諒氏を迎えた二人代表取締役体制で更なる飛躍を目指しています。
 
 同社が展開する「営業成果と育成をつなぐEnablement App」は、従来の営業研修では実現できなかった「成果起点の人材育成」を可能にする革新的なサービス。第一生命保険との「自律型教育」を目的としたAIロープレによるPoCプロジェクトや、国内最大級 of 「セールスイネーブルメント」専門カンファレンスの開催など、業界をリードする最新の取り組みを次々と発表しています。「人とビジネスの可能性を飛躍させる」をビジョンに掲げ、「イネーブルメントをディファクトにする」というミッションのもと、営業生産性の最大化という企業の根幹課題に真正面から挑んでいます。
 
-同社の最大の優位性は、「営業現場の解像度の高さ×AIエージェント」にあります。ノイズの多い営業現場のデータに対する独自の下処理・データクレンジングのノウハウを持ち、営業成果（KGI）への貢献を統計的に実証する形で大手企業向けに提供できる企業は他にほとんど存在しません。業績は毎年150%程度のスピードで急成長を遂げており、営業利益率30％超、キャッシュフローはプラスを維持するなど、極めて強固な事業基盤を誇るエキサイティングな注目企業です。</p>
-            </div>
+同社の最大の優位性は、「営業現場の解像度の高さ×AIエージェント」にあります。ノイズの多い営業現場のデータに対する独自の下処理・データクレンジングのノウハウを持ち、営業成果（KGI）への貢献を統計的に実証する形で大手企業向けに提供できる企業は他にほとんど存在しません。業績は毎年150%程度のスピードで急成長を遂げており、営業利益率30％超、キャッシュフローはプラスを維持するなど、極めて強固な事業基盤を誇るエキサイティングな注目企業です。</div>
 
-            <div class="border-2 border-morich bg-morich/5 rounded-lg p-5 md:p-6 space-y-3">
-                <h3 class="text-morich text-lg font-black tracking-wider flex items-center gap-2">★ morichオススメPoint</h3>
-                <p class="whitespace-pre-wrap text-gray-800 text-sm md:text-base font-medium">★IPO準備フェーズ：N-2期
+                    <div class="morich-highlight rounded-xl p-5 md:p-6 mb-8 border-l-4">
+                        <h4 class="text-base font-black text-morichRed flex items-center mb-3">
+                            <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                            morichオススメPoint
+                        </h4>
+                        <div class="text-sm text-gray-700 space-y-3 whitespace-pre-wrap">★IPO準備フェーズ：N-2期
 
 ■極めて良好な資金調達・財務状況
 業績は年間150%以上で成長、営業利益30%超、キャッシュフローはプラスを維持し毎月利益が出ているため、事業運営のための追加の大きな資金調達は基本不要という極めて健全な状態です。
@@ -104,25 +140,33 @@
 ミダスキャピタルの持つM&Aネットワークやデューデリジェンスの知見、資金調達力などをふんだんに活用できる、非常にチャレンジングで稀有な環境です。
 
 ■M&Aを用いたダイナミックな事業展開
-非上場のタイミングからM&Aを予定しており、今年は1件、来年以降は年2件と連続的な企業買収を想定しています。自ら買収先の経営幹部として入り、バリューアップを推進するような大きな経験が積めます。</p>
-            </div>
+非上場のタイミングからM&Aを予定しており、今年は1件、来年以降は年2件と連続的な企業買収を想定しています。自ら買収先の経営幹部として入り、バリューアップを推進するような大きな経験が積めます。</div>
+                    </div>
 
-            <div class="space-y-4">
-                <h3 class="text-lg font-bold border-l-4 border-gray-900 pl-3">代表プロフィール</h3>
-                <div class="space-y-4 text-sm md:text-base text-gray-700 leading-relaxed">
-                    <p class="whitespace-pre-wrap">・代表取締役会長 山下貴宏氏
-法政大学卒業後、日本ヒューレット・パッカード、船井総合研究所、マーサー・ジャパンを経て、セールスフォース・ドットコムでSales Enablement本部長として7年半在籍。日本のセールスイネーブルメント分野の第一人者として豊富な実績を積み、顧客からの強い要望を受けて2019年に創業を決意。「日本企業にこれほどニーズがあるなら自分たちが手がけよう」という熱い想いで起業し、セールスイネーブルメントの普及に人生をかけて取り組む真のビジョナリー。2025年2月より現職。</p>
-                    <p class="whitespace-pre-wrap">・代表取締役社長 下村諒氏
-横浜国立大学卒業後、キーエンスでトップクラスの営業成績を収め、本社販促部門で国内外のマーケティング施策をリード。その後、特殊冷凍スタートアップのデイブレイクで取締役COOとして3年半で業界シェアNo.1メーカーに成長させた実績を持つ。「再現性のある営業手法」の限界を痛感し、より本質的な営業生産性向上を目指してXpotentialに参画。異なる専門性を持つメンバーとの有機的連携により革新を起こすことに情熱を注ぐ実行力溢れるリーダー。2025年2月より現職。</p>
-                </div>
-            </div>
+                    <div class="border-t border-gray-100 pt-6 mb-6">
+                        <h4 class="text-sm font-bold text-gray-400 uppercase tracking-wider mb-4">経営陣プロフィール</h4>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div class="bg-gray-50 rounded-xl p-4">
+                                <p class="text-xs text-morichRed font-bold mb-1">代表取締役会長</p>
+                                <p class="text-base font-bold text-gray-900 mb-2">山下 貴宏 氏</p>
+                                <p class="text-sm text-gray-600 whitespace-pre-wrap leading-relaxed">法政大学卒業後、日本ヒューレット・パッカード、船井総合研究所、マーサー・ジャパンを経て、セールスフォース・ドットコムでSales Enablement本部長として7年半在籍。日本のセールスイネーブルメント分野の第一人者として豊富な実績を積み、顧客からの強い要望を受けて2019年に創業を決意。「日本企業にこれほどニーズがあるなら自分たちが手がけよう」という熱い想いで起業し、セールスイネーブルメントの普及に人生をかけて取り組む真のビジョナリー。2025年2月より現職。</p>
+                            </div>
+                            <div class="bg-gray-50 rounded-xl p-4">
+                                <p class="text-xs text-morichRed font-bold mb-1">代表取締役社長</p>
+                                <p class="text-base font-bold text-gray-900 mb-2">下村 諒 氏</p>
+                                <p class="text-sm text-gray-600 whitespace-pre-wrap leading-relaxed">横浜国立大学卒業後、キーエンスでトップクラスの営業成績を収め、本社販促部門で国内外のマーケティング施策をリード。その後、特殊冷凍スタートアップのデイブレイクで取締役COOとして3年半で業界シェアNo.1メーカーに成長させた実績を持つ。「再現性のある営業手法」の限界を痛感し、より本質的な営業生産性向上を目指してXpotentialに参画。異なる専門性を持つメンバーとの有機的連携により革新を起こすことに情熱を注ぐ実行力溢れるリーダー。2025年2月より現職。</p>
+                            </div>
+                        </div>
+                    </div>
 
-            <div class="bg-gray-50 border border-gray-200 rounded-lg p-5 space-y-6">
-                <h3 class="text-lg font-bold text-gray-900 border-b border-gray-200 pb-2">JOB情報</h3>
-                <div class="space-y-4">
-                    <div>
-                        <h4 class="text-sm font-bold text-gray-500 uppercase tracking-wider mb-1">業務内容</h4>
-                        <p class="whitespace-pre-wrap text-sm text-gray-700 leading-relaxed">■ポジション概要
+                    <div class="border-t border-gray-100 pt-6 mb-6">
+                        <h3 class="text-lg font-bold text-gray-900 mb-4 flex items-center">
+                            <span class="inline-block w-2 h-4 bg-morichRed mr-2 rounded-sm"></span>募集ポジション：CFO候補
+                        </h3>
+                        <div class="bg-slate-50 rounded-xl p-5 space-y-4">
+                            <div>
+                                <h4 class="text-xs font-bold text-gray-400 uppercase mb-1">業務内容</h4>
+                                <div class="text-sm text-gray-700 whitespace-pre-wrap leading-relaxed">■ポジション概要
 CFOとして、IPOに向けたエクイティストーリーの構築および投資家・金融機関とのコミュニケーションをリードいただきます。また、ミダスキャピタルのネットワークを活用したM&A戦略の推進と、それに伴う資金調達・買収交渉を担い、グループ全体の企業価値最大化を実現していただくポジションです。
 
 ■採用の背景と課題
@@ -159,68 +203,84 @@ CFOとして、IPOに向けたエクイティストーリーの構築および�
 ■組織状況
 現在、コーポレート部門は経理・リーガルを中心に運営されており、公認会計士バックグラウンドのディレクターが統括しています。一方で、経営企画・IR機能は兼務体制となっているため、新任CFOには資本市場との対話およびIPO推進の中核を担っていただく想定です。
 
-※経理・総務などの管理部門統括は必須要件ではなく、ご経験に応じて役割設計を行います。</p>
-                    </div>
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm">
-                        <div><span class="font-bold text-gray-600 block mb-1">応募資格・詳細</span><p class="text-gray-700 whitespace-pre-wrap">• IPO実務とM&Aファイナンスの両方をリードできる経験者
+※経理・総務などの管理部門統括は必須要件ではなく、ご経験に応じて役割設計を行います。</div>
+                            </div>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 pt-2 border-t border-gray-200/60">
+                                <div>
+                                    <h4 class="text-xs font-bold text-gray-400 uppercase mb-1">応募資格・詳細</h4>
+                                    <div class="text-sm text-gray-700 whitespace-pre-wrap">• IPO実務とM&Aファイナンスの両方をリードできる経験者
 • 資本政策のストーリーメイクができる方
 • 0→1/PMI両面の耐性 ※PMI自体はスコープ外の想定
-• ミダスキャピタルのリソースを活用できる方</p></div>
-                        <div><span class="font-bold text-gray-600 block mb-1">勤務地</span><p class="text-gray-700">東京</p></div>
-                        <div><span class="font-bold text-gray-600 block mb-1">リモートワーク</span><p class="text-gray-700">基本出社</p></div>
-                        <div><span class="font-bold text-gray-600 block mb-1">副業</span><p class="text-gray-700">条件によって「可」</p></div>
+• ミダスキャピタルのリソースを活用できる方</div>
+                                </div>
+                                <div>
+                                    <h4 class="text-xs font-bold text-gray-400 uppercase mb-1">勤務環境</h4>
+                                    <div class="text-sm text-gray-700">
+                                        <p><strong>勤務地:</strong> 東京</p>
+                                        <p><strong>リモートワーク:</strong> 基本出社</p>
+                                        <p><strong>副業:</strong> 条件によって「可」</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="border-t border-gray-100 pt-4 flex flex-wrap gap-4">
+                        <a href="https://xpotential.co.jp/" target="_blank" class="inline-flex items-center text-sm font-medium text-morichRed hover:underline">
+                            <svg class="w-4 h-4 mr-1.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+                            企業オフィシャルサイト
+                        </a>
                     </div>
                 </div>
-            </div>
+            </section>
 
-            <div class="space-y-3">
-                <h3 class="text-xs font-bold text-gray-400 uppercase tracking-wider">外部リンク</h3>
-                <div class="flex flex-wrap gap-3">
-                    <a href="https://xpotential.co.jp/" target="_blank" class="inline-flex items-center gap-1.5 text-xs font-bold bg-gray-100 hover:bg-gray-200 text-gray-700 px-3 py-2 rounded transition-colors">コーポレートサイト <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg></a>
-                </div>
-            </div>
-        </section>
+            <section id="comp-varietas" class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden pt-4 scroll-mt-20">
+                <div class="p-6 md:p-8">
+                    <div class="flex flex-wrap gap-2 mb-3">
+                        <span class="px-3 py-1 bg-red-100 text-morichRed text-xs font-bold rounded-full">経営企画責任者候補</span>
+                    </div>
+                    <h2 class="text-3xl md:text-4xl font-black text-gray-900 tracking-tight mb-6">株式会社VARIETAS（バリエタス）</h2>
+                    
+                    <div class="bg-slate-50 border border-slate-100 rounded-xl p-4 md:p-5 mb-8">
+                        <p class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-3">Corporate Overview</p>
+                        <div class="overflow-x-auto">
+                            <table class="w-full text-sm text-left">
+                                <tbody class="divide-y divide-gray-200/60">
+                                    <tr>
+                                        <th class="py-3 pr-4 font-bold text-gray-600 w-32 whitespace-nowrap">本社住所</th>
+                                        <td class="py-3 text-gray-800">〒141-0021 東京都品川区上大崎2丁目15-19 BLOCKS MEGURO708号</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="py-3 pr-4 font-bold text-gray-600 w-32 whitespace-nowrap">設立</th>
+                                        <td class="py-3 text-gray-800">2019年12月</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="py-3 pr-4 font-bold text-gray-600 w-32 whitespace-nowrap">上場区分</th>
+                                        <td class="py-3 text-gray-800">未上場</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
 
-        <section id="company-2" class="bg-white rounded-xl shadow-sm border border-gray-200 p-6 md:p-10 space-y-8 scroll-mt-36">
-            <div class="space-y-3">
-                <div class="flex flex-wrap gap-2">
-                    <span class="bg-gray-800 text-white text-xs font-bold px-2.5 py-1 rounded">経営企画責任者候補</span>
-                </div>
-                <h2 class="text-3xl md:text-4xl font-black text-gray-900 tracking-tight">株式会社VARIETAS（バリエタス）</h2>
-            </div>
-
-            <div class="bg-overviewBg rounded-lg p-5">
-                <h3 class="text-xs font-bold text-gray-500 uppercase tracking-wider mb-3">Corporate Overview</h3>
-                <div class="overflow-x-auto">
-                    <table class="w-full text-sm text-left">
-                        <tbody>
-                            <tr class="border-b border-gray-200"><th class="py-2.5 w-32 font-bold text-gray-600">本社住所</th><td class="py-2.5 text-gray-900">〒141-0021 東京都品川区上大崎2丁目15-19 BLOCKS MEGURO708号</td></tr>
-                            <tr class="border-b border-gray-200"><th class="py-2.5 font-bold text-gray-600">設立</th><td class="py-2.5 text-gray-900">2019年12月</td></tr>
-                            <tr class="border-b border-gray-200"><th class="py-2.5 font-bold text-gray-600">従業員数</th><td class="py-2.5 text-gray-900">約10名</td></tr>
-                            <tr><th class="py-2.5 font-bold text-gray-600">上場区分</th><td class="py-2.5 text-gray-900">未上場</td></tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-
-            <div class="space-y-4">
-                <h3 class="text-lg font-bold border-l-4 border-gray-900 pl-3">企業紹介</h3>
-                <p class="whitespace-pre-wrap text-gray-700 leading-relaxed text-sm md:text-base">「Opportunity Friction 0」をビジョンに掲げ、人と機会の出会い方をAIで再設計し、社会のあらゆるミスマッチを構造から解消することを目指す2019年設立のスタートアップです。
+                    <div class="prose max-w-none text-gray-700 leading-relaxed whitespace-pre-wrap mb-8">「Opportunity Friction 0」をビジョンに掲げ、人と機会の出会い方をAIで再設計し、社会のあらゆるミスマッチを構造から解消することを目指す2019年設立のスタートアップです。
 主力事業はAIが面接官を担う「AI面接官」サービスです。単なる採用の効率化ではなく、面接時の一次データを入社後の配置・育成・評価データと統合し、人と組織の意思決定を支援する新たな「人事OS」を実装する壮大な構想を持っています。書類選考から一次面接までをAIが担当し、経済産業省が定める社会人基礎力12項目を41段階で評価。三菱商事、キリンホールディングス、コクヨなど大手企業での本格導入が進み、95%の候補者満足度を実現しています。2024年6月には最新のシリーズA資金調達で6億円を調達し、業界標準化への道筋を明確にしました。
 
 他社との大きな違いはターゲットを「ナショナルクライアント（超大手企業）」に特化している点です。カルチャーフィットなどの定性評価も高精度で実現するプロダクト力が強みであり、アップセル率100%、解約率（チャーンレート）0%という驚異的な実績を出しています。
 さらに注目すべきは、個性でつながる空間「IVERSE」の開発です。自分の個性をピースで表現し、同じ価値観を持つ人々とのつながりを生み出すこの革新的なプラットフォームは、2023年4月に正式ローンチされ、若い世代から大きな支持を得ています。Microsoft Azureをフル活用した技術力の高さも評価されており、技術面でも業界をリードしています。
 
-従業員約10名（うち実質5名の営業体制）でありながら、リリースから約1年半で大手100社を開拓するという異常なまでの高生産性を誇ります。AIエージェントという新領域で、市場構造をひっくり返す圧倒的なスピード感と成長を最前線で体感できる魅力的な環境です。</p>
-            </div>
+従業員約10名（うち実質5名の営業体制）でありながら、リリースから約1年半で大手100社を開拓するという異常なまでの高生産性を誇ります。AIエージェントという新領域で、市場構造をひっくり返す圧倒的なスピード感と成長を最前線で体感できる魅力的な環境です。</div>
 
-            <div class="border-2 border-morich bg-morich/5 rounded-lg p-5 md:p-6 space-y-3">
-                <h3 class="text-morich text-lg font-black tracking-wider flex items-center gap-2">★ morichオススメPoint</h3>
-                <p class="whitespace-pre-wrap text-gray-800 text-sm md:text-base font-medium">■好調な資金調達状況：
+                    <div class="morich-highlight rounded-xl p-5 md:p-6 mb-8 border-l-4">
+                        <h4 class="text-base font-black text-morichRed flex items-center mb-3">
+                            <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                            morichオススメPoint
+                        </h4>
+                        <div class="text-sm text-gray-700 space-y-3 whitespace-pre-wrap">■好調な資金調達状況：
 2025年3月にトップティアVC（ALL STAR SAAS FUNDやグローバル・ブレイン等）からシリーズAにて6億円を調達し、累計調達額は10億円に達しています。
 
 ■圧倒的なプロダクト力と実績：
-アップセル率 100%、チャーンレート（解約率）0%を誇り、キリンHDやKDDI、JR東日本など名だたる大手企業で続々と導入されています。
+アップセル率100%、チャーンレート（解約率）0%を誇り、キリンHDやKDDI、JR東日本など名だたる大手企業で続々と導入されています。
 
 ■異次元の生産性とスピード：
 従業員約10名という少人数ながら、独自の顧問ネットワークや顧客紹介なども駆使し、リリースからわずか1年半で超大手クライアント100社を開拓しています。
@@ -229,21 +289,26 @@ CFOとして、IPOに向けたエクイティストーリーの構築および�
 AI面接官で得たデータを起点に、入社後の配置や評価、育成までを一気通貫で繋ぐ「人的資本OS（データプラットフォーム）」を創り上げる、非常にエキサイティングな0→1、1→10のフェーズに携わることができます。
 
 ■プロフェッショナルが集うフラットな組織：
-マネジメントの概念を持たないコンサルティングファームに近いフラットな組織であり、フルフレックス・ハイブリッド勤務など柔軟な環境下で、役職や職能にとらわれず事業成果に熱狂できる優秀な人材が集まっています。</p>
-            </div>
+マネジメントの概念を持たないコンサルティングファームに近いフラットな組織であり、フルフレックス・ハイブリッド勤務など柔軟な環境下で、役職や職能にとらわれず事業成果に熱狂できる優秀な人材が集まっています。</div>
+                    </div>
 
-            <div class="space-y-4">
-                <h3 class="text-lg font-bold border-l-4 border-gray-900 pl-3">代表プロフィール</h3>
-                <p class="whitespace-pre-wrap text-gray-700 leading-relaxed text-sm md:text-base">■代表取締役社長 木下隆太朗氏
-早稲田大学創造理工学部卒業後、新卒でリクルートマーケティングパートナーズに入社し、スタディサプリ事業の営業組織立上げに従事。2年目で1億円の売上を達成し、3年目に新規事業開発を手がけ、2016年5月に最年少で社長賞を受賞。その後エムスリー株式会社に転職し、バイオテック事業子会社の事業再生をリード、グループ子会社執行役員として活躍。学生時代から教育分野に深い関心を持ち、東進ハイスクールで1,000人規模の学生を第一志望校合格に導いた実績を持つ。「理不尽を新しい物語で超越する」という強い信念のもと、2019年12月にVARIETASを設立し、社会の構造的問題解決に情熱を注いでいる。</p>
-            </div>
+                    <div class="border-t border-gray-100 pt-6 mb-6">
+                        <h4 class="text-sm font-bold text-gray-400 uppercase tracking-wider mb-4">代表プロフィール</h4>
+                        <div class="bg-gray-50 rounded-xl p-4">
+                            <p class="text-xs text-morichRed font-bold mb-1">代表取締役社長</p>
+                            <p class="text-base font-bold text-gray-900 mb-2">木下 隆太朗 氏</p>
+                            <p class="text-sm text-gray-600 whitespace-pre-wrap leading-relaxed">早稲田大学創造理工学部卒業後、新卒でリクルートマーケティングパートナーズに入社し、スタディサプリ事業の営業組織立上げに従事。2014年に2年目で1億円の売上を達成し、3年目に新規事業開発を手がけ、2016年5月に最年少で社長賞を受賞。その後エムスリー株式会社に転職し、バイオテック事業子会社の事業再生をリード、グループ子会社執行役員として活躍。学生時代から教育分野に深い関心を持ち、東進ハイスクールで1,000人規模の学生を第一志望校合格に導いた実績を持つ。「理不尽を新しい物語で超越する」という強い信念のもと、2019年12月にVARIETASを設立し、社会の構造的問題解決に情熱を注いでいる。</p>
+                        </div>
+                    </div>
 
-            <div class="bg-gray-50 border border-gray-200 rounded-lg p-5 space-y-6">
-                <h3 class="text-lg font-bold text-gray-900 border-b border-gray-200 pb-2">JOB情報</h3>
-                <div class="space-y-4">
-                    <div>
-                        <h4 class="text-sm font-bold text-gray-500 uppercase tracking-wider mb-1">業務内容</h4>
-                        <p class="whitespace-pre-wrap text-sm text-gray-700 leading-relaxed">■当社について
+                    <div class="border-t border-gray-100 pt-6 mb-6">
+                        <h3 class="text-lg font-bold text-gray-900 mb-4 flex items-center">
+                            <span class="inline-block w-2 h-4 bg-morichRed mr-2 rounded-sm"></span>募集ポジション：経営企画責任者候補
+                        </h3>
+                        <div class="bg-slate-50 rounded-xl p-5 space-y-4">
+                            <div>
+                                <h4 class="text-xs font-bold text-gray-400 uppercase mb-1">ポジションのミッション ＆ 業務内容</h4>
+                                <div class="text-sm text-gray-700 whitespace-pre-wrap leading-relaxed">■当社について
 VARIETAS（バリエタス）は、AIとテクノロジーの力で“人と機会（ポジション）の出会い方”を再設計する企業です。  
 「個性に合った機会と出会える社会」を実現するために、人の理解ベースになるあらゆるプロセス──採用・評価・育成・配置──をデータドリブンに再構築しています。  
   
@@ -257,8 +322,9 @@ VARIETAS（バリエタス）は、AIとテクノロジーの力で“人と機�
 ・AI面接官の事業拡張  
 ・大手企業への横断導入  
 ・新規プロダクト・新規事業の立ち上げ  
-が同時並行で進むポストPMF〜スケールのフェーズです。  
+が同時並行で進むポストPMF〜スケールのフェーズです。   
  
+
 ◼︎ポジションのミッション
 シリーズA（6億円）の資金調達を経て、「AI面接官」の爆発的成長を「人事OS」という次なる巨大市場の覇権へと繋げるため、経営の意思決定を「構造・数字・実行」で支え抜くことがミッションです。
 CEOの構想を再現可能な計数計画へと翻訳し、ユニットエコノミクスを死守する「規律の番人」として、投資効率を最大化させながら事業成長への最短距離を設計していただきます。
@@ -269,6 +335,7 @@ CEOの構想を再現可能な計数計画へと翻訳し、ユニットエコ�
 3. ユニットエコノミクスの最適化：6億円の投資効率を監視し、LTV/CACやNRRを目標水準以上に維持・改善する
 4. 現場ボトルネックの解消：エンタープライズGTM等の最重要プロジェクトに介入し、再現性のあるオペレーションへと立て直す
  
+  
 ◼︎業務詳細
 【1】経営管理・モニタリング（経営コックピット構築）
 - 事業・部門別KPIの設計と、ダッシュボード等によるリアルタイム可視化
@@ -296,186 +363,189 @@ CEOの構想を再現可能な計数計画へと翻訳し、ユニットエコ�
 ◼︎権限/意思決定範囲
 - 投資・リソース配分への関与：予算および人員リソースの配分に対し、経営会議において修正や再考を求める「規律の番人」としての権限
 - KPI設計・統制権限：各部門のKPI設計およびそのモニタリング手法を定義・是正する全社横断的な権限
-- 特命事項の執行：CEO直下の重要プロジェクトにおいて、部門を横断してリソースを動かすプロジェクトリーダーシップ権限</p>
-                    </div>
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm">
-                        <div><span class="font-bold text-gray-600 block mb-1">応募資格・詳細</span><p class="text-gray-700 whitespace-pre-wrap">必須スキル	
-- 事業会社での経営企画・事業企画経験（5年以上）：*予算策定・KPI管理等の「経営管理の型」を熟知していること
+- 特命事項の執行：CEO直下の重要プロジェクトにおいて、部門を横断してリソースを動かすプロジェクトリーダーシップ権限</div>
+                            </div>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 pt-2 border-t border-gray-200/60">
+                                <div>
+                                    <h4 class="text-xs font-bold text-gray-400 uppercase mb-1">応募資格</h4>
+                                    <div class="text-sm text-gray-700 whitespace-pre-wrap"><span class="font-bold text-slate-500 text-xs block">[必須スキル]</span>- 事業会社での経営企画・事業企画経験（5年以上）：*予算策定・KPI管理等の「経営管理の型」を熟知していること
 - SaaS/B2Bビジネスの深い理解：ユニットエコノミクス（LTV/CAC）やNRRをデータに基づき改善した経験
 - データ基盤の構築・運用経験：Salesforce/SQL/BIツール等を用い、自ら手を動かして「経営の可視化」を実現できる力
 
-歓迎スキル	
-- 戦略コンサルティングファーム、または投資銀行での実務経験
+<span class="font-bold text-slate-500 text-xs block mt-2">[歓迎スキル]</span>- 戦略コンサルティングファーム、または投資銀行での実務経験
 - 起業経験、または事業責任者としてP/Lを自ら担った経験
-- シリーズA以降のスタートアップでの資金調達・IR実務経験</p></div>
-                        <div><span class="font-bold text-gray-600 block mb-1">求める人物像</span><p class="text-gray-700 whitespace-pre-wrap">- 圧倒的な当事者意識（Extreme Ownership）：役割を限定せず、自ら課題を拾い、解決まで責任を持ち切れる方
+- シリーズA以降のスタートアップでの資金調達・IR実務経験
+
+<span class="font-bold text-slate-500 text-xs block mt-2">[求める人物像]</span>- 圧倒的な当事者意識（Extreme Ownership）：役割を限定せず、自ら課題を拾い、解決まで責任を持ち切れる方
 - 鋼の論理 × 泥臭い実行力：高度な構造化能力を持ちつつ、現場の調整やデータ不備の解消を厭わない方
-- 規律への執着：CEOの「攻め」をリスペクトしながらも、数字の異常や非効率に冷徹に「No」を言える強さを持つ方</p></div>
-                        <div><span class="font-bold text-gray-600 block mb-1">勤務地</span><p class="text-gray-700">東京</p></div>
-                        <div><span class="font-bold text-gray-600 block mb-1">リモートワーク</span><p class="text-gray-700">ハイブリッド勤務</p></div>
+- 規律への執着：CEOの「攻め」をリスペクトしながらも、数字の異常や非効率に冷徹に「No」を言える強さを持つ方</div>
+                                </div>
+                                <div>
+                                    <h4 class="text-xs font-bold text-gray-400 uppercase mb-1">勤務環境</h4>
+                                    <div class="text-sm text-gray-700">
+                                        <p><strong>勤務地:</strong> 東京</p>
+                                        <p><strong>リモートワーク:</strong> ハイブリッド勤務</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="border-t border-gray-100 pt-4 flex flex-wrap gap-4">
+                        <a href="https://varietas.co.jp/" target="_blank" class="inline-flex items-center text-sm font-medium text-morichRed hover:underline">
+                            <svg class="w-4 h-4 mr-1.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+                            企業オフィシャルサイト
+                        </a>
                     </div>
                 </div>
-            </div>
+            </section>
 
-            <div class="space-y-3">
-                <h3 class="text-xs font-bold text-gray-400 uppercase tracking-wider">外部リンク</h3>
-                <div class="flex flex-wrap gap-3">
-                    <a href="https://varietas.co.jp/" target="_blank" class="inline-flex items-center gap-1.5 text-xs font-bold bg-gray-100 hover:bg-gray-200 text-gray-700 px-3 py-2 rounded transition-colors">コーポレートサイト <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg></a>
-                </div>
-            </div>
-        </section>
+            <section id="comp-tripla" class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden pt-4 scroll-mt-20">
+                <div class="p-6 md:p-8">
+                    <div class="flex flex-wrap gap-2 mb-3">
+                        <span class="px-3 py-1 bg-red-100 text-morichRed text-xs font-bold rounded-full">東証グロース</span>
+                        <span class="px-3 py-1 bg-gray-100 text-gray-600 text-xs font-bold rounded-full">Vice President International Business & PMI</span>
+                    </div>
+                    <h2 class="text-3xl md:text-4xl font-black text-gray-900 tracking-tight mb-6">tripla株式会社（トリプラ）</h2>
+                    
+                    <div class="bg-slate-50 border border-slate-100 rounded-xl p-4 md:p-5 mb-8">
+                        <p class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-3">Corporate Overview</p>
+                        <div class="overflow-x-auto">
+                            <table class="w-full text-sm text-left">
+                                <tbody class="divide-y divide-gray-200/60">
+                                    <tr>
+                                        <th class="py-3 pr-4 font-bold text-gray-600 w-32 whitespace-nowrap">本社住所</th>
+                                        <td class="py-3 text-gray-800">東京都新宿区西新宿4-15-3 住友不動産西新宿ビル3号館3階</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="py-3 pr-4 font-bold text-gray-600 w-32 whitespace-nowrap">設立</th>
+                                        <td class="py-3 text-gray-800">2015年 (2017年より現サービス展開)</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="py-3 pr-4 font-bold text-gray-600 w-32 whitespace-nowrap">上場区分</th>
+                                        <td class="py-3 text-gray-800">東証グロース</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
 
-        <section id="company-3" class="bg-white rounded-xl shadow-sm border border-gray-200 p-6 md:p-10 space-y-8 scroll-mt-36">
-            <div class="space-y-3">
-                <div class="flex flex-wrap gap-2">
-                    <span class="bg-gray-800 text-white text-xs font-bold px-2.5 py-1 rounded">Vice President International Business & PMI</span>
-                    <span class="bg-blue-600 text-white text-xs font-bold px-2.5 py-1 rounded">東証グロース</span>
-                </div>
-                <h2 class="text-3xl md:text-4xl font-black text-gray-900 tracking-tight">tripla株式会社（トリプラ）</h2>
-            </div>
-
-            <div class="bg-overviewBg rounded-lg p-5">
-                <h3 class="text-xs font-bold text-gray-500 uppercase tracking-wider mb-3">Corporate Overview</h3>
-                <div class="overflow-x-auto">
-                    <table class="w-full text-sm text-left">
-                        <tbody>
-                            <tr class="border-b border-gray-200"><th class="py-2.5 w-32 font-bold text-gray-600">本社住所</th><td class="py-2.5 text-gray-900">東京都新宿区西新宿4-15-3 住友不動産西新宿ビル3号館3階</td></tr>
-                            <tr class="border-b border-gray-200"><th class="py-2.5 font-bold text-gray-600">設立</th><td class="py-2.5 text-gray-900">2015年</td></tr>
-                            <tr class="border-b border-gray-200"><th class="py-2.5 font-bold text-gray-600">従業員数</th><td class="py-2.5 text-gray-900"></td></tr>
-                            <tr><th class="py-2.5 font-bold text-gray-600">上場区分</th><td class="py-2.5 text-gray-900">東証グロース</td></tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-
-            <div class="space-y-4">
-                <h3 class="text-lg font-bold border-l-4 border-gray-900 pl-3">企業紹介</h3>
-                <p class="whitespace-pre-wrap text-gray-700 leading-relaxed text-sm md:text-base">国内外の宿泊施設向けにDXを推進するITソリューション（ダイレクトブッキングに特化した宿泊予約サービス）を提供しています。
+                    <div class="prose max-w-none text-gray-700 leading-relaxed whitespace-pre-wrap mb-8">国内外の宿泊施設向けにDXを推進するITソリューション（ダイレクトブッキングに特化した宿泊予約サービス）を提供しています。
 2017年にAIチャットボット「tripla Bot」の提供を開始して以降、直販予約を支援する予約エンジン「tripla Book」、宿泊施設特化のCRM・マーケティング オートメーションサービス「tripla Connect」、広告運用代行サービス「tripla Boost」などを展開。2022年11月に東証グロース市場へ上場しています。
 主力の「tripla Book」は導入3,645施設・GMV429億円まで成長し、triplaソリューション全体の導入施設は9,155施設に拡大しています。
 
-アジアパシフィックを中心に9か国で事業を展開しています。（日本、台湾、香港、韓国、アメリカ、シンガポール、インドネシア、タイ、フィリピン）今後は決済ソリューションの拡充やAI×ビッグデータ活用を通じて、宿泊施設の収益最大化と業務自動化をさらに推進していく方針を掲げています。</p>
-            </div>
+アジアパシフィックを中心に9か国で事業を展開しています。（日本、台湾、香港、韓国、アメリカ、シンガポール、インドネシア、タイ、フィリピン）今後は決済ソリューションの拡充やAI×ビッグデータ活用を通じて、宿泊施設の収益最大化と業務自動化をさらに推進していく方針を掲げています。</div>
 
-            <div class="border-2 border-morich bg-morich/5 rounded-lg p-5 md:p-6 space-y-3">
-                <h3 class="text-morich text-lg font-black tracking-wider flex items-center gap-2">★ morichオススメPoint</h3>
-                <p class="whitespace-pre-wrap text-gray-800 text-sm md:text-base font-medium">① 宿泊業界DXの"グローバルリーダー"ポジションを確立済み
+                    <div class="morich-highlight rounded-xl p-5 md:p-6 mb-8 border-l-4">
+                        <h4 class="text-base font-black text-morichRed flex items-center mb-3">
+                            <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                            morichオススメPoint
+                        </h4>
+                        <div class="text-sm text-gray-700 space-y-3 whitespace-pre-wrap">① 宿泊業界DXの"グローバルリーダー"ポジションを確立済み
 国内約4,000施設・グローバル約9,000施設への導入実績を持つ、ホテル向けSaaSのトップランナー。東証グロース上場企業でありながら、韓国・台湾・シンガポール・香港・米国・タイ・インドネシア・フィリピンと8カ国以上に拠点を展開する本格グローバル企業。「日本のホテルDXを世界へ」という絵が、すでに現実になっている。
 ② M&Aは社長が全てドアノック──オーナーシップと熱量が違う経営陣
 仲介業者を一切使わず、CEOである高橋氏自らがクロスボーダーM&Aを3〜4社実行。財務DDからPMIまで経営陣が直接動く、スピードと本気度が桁違いのスタートアップマインドを持つ上場企業。代表との距離が近く、経営の意思決定を間近で体感できる環境。
 ③ 経営会議はオール英語──本物のグローバル環境がここにある
 社内の経営会議はすでに完全英語化。多国籍メンバーと日常的に渡り合う、なかなかお目にかかれないリアルなグローバル職場。「英語を使いたい」ではなく「英語でしか仕事にならない」環境に身を置きたい方には最高の舞台。
 ④ IFRSへの移行・J-SOX対応など、"今まさに進化中"の会社
-日本基準からIFRS（国際会計基準）への移行、内部統制の本格フェーズ突入、連結決算の高度化など、会社の仕組みそのものをゼロから作り上げるフェーズ真っ次中。「整った環境で働く」より「自分で仕組みを作りたい」人が輝ける場所。
+日本基準からIFRS（国際会計基準）への移行、内部統制の本格フェーズ突入、連結決算の高度化など、会社の仕組みそのものをゼロから作り上げるフェーズ真っ只中。「整った環境で働く」より「自分で仕組みを作りたい」人が輝ける場所。
 ⑤ フルフレックス×出社ベースで、ちゃんとチームで戦える文化
-フルフレックス制（実働8時間）で自律的な働き方が可能な一方、基本は出社スタイルでチームの一体感も大切にしている。リモート偏重でも管理偏重でもない、ちょうど良いバランス感覚を持つ会社。</p>
-            </div>
-
-            <div class="space-y-4">
-                <h3 class="text-lg font-bold border-l-4 border-gray-900 pl-3">代表プロフィール</h3>
-                <p class="whitespace-pre-wrap text-gray-700 leading-relaxed text-sm md:text-base">・代表取締役 CEO 高橋和久氏
-北海道大学大学院工学研究科卒業。株式会社TKK入社後、Wake Forest UniversityにてMBAを取得。フィリップモリスジャパン合同会社、A.T.カーニー株式会社にてコンサル業・国内外の営業・マネジメント業務を経験。アマゾンジャパン合同会社のファッション事業部長、日本コカ･コーラ株式会社のEC事業部長を経て、2015年に株式会社umami（現・tripla株式会社）に取締役として入社。2016年に代表取締役CEOに就任。</p>
-            </div>
-
-            <div class="bg-gray-50 border border-gray-200 rounded-lg p-5 space-y-6">
-                <h3 class="text-lg font-bold text-gray-900 border-b border-gray-200 pb-2">JOB情報</h3>
-                <div class="space-y-4">
-                    <div>
-                        <h4 class="text-sm font-bold text-gray-500 uppercase tracking-wider mb-1">業務内容</h4>
-                        <p class="whitespace-pre-wrap text-sm text-gray-700 leading-relaxed">役割と責任 (Role and Responsibility)
-海外事業の成長とM&A後のPMIを担う部署の責任者であり、且つ会社全体の執行役員であるため、全社の業績目標に対して責任を持ちます。業績目標は営業収益と純利益の達成です。一方で主たるKPIは1. 海外拠点における契約施設数・営業収益の成長、2. M&A子会社のPMI統合達成率です。Howに対しては執行役員としてコアバリューの実践でありますが、加えて海外各拠点のローカルチームと緊密に連携しながら海外拠点のGMをリードしつつ、将来的なチーム組成と強化を進めます。
-
-
-主な職責範囲 (Key Jobs)
-1) PMI戦略の立案と実行
-M&Aにより傘下に入った子会社（BookandLink、Surehigh、Endurance等）のtriplaグループへの統合計画を策定し、実行します。プロダクト・システム・組織・ビジネスプロセスの各側面における統合を推進し、各子会社が早期にtriplaのサービス品質・業績水準に到達できるよう、具体的なマイルストーンとアクションを設計・管理します。
-
-2) 海外拠点のビジネス成長推進
-韓国・台湾・インドネシア・タイ・フィリピンをはじめとする海外各拠点において、年間目標（契約施設数・営業収益）達成のための成長戦略を立案します。その戦略は必ず、論理的、効果的、効率的、現実的であることが求められます。
-
-3) 海外ローカルチームとの連携と支援
-海外各拠点のローカルチームと緊密に連携し、営業・オンボーディング・カスタマーサクセスにわたる現地業務を支援します。大型アカウントへの提案や重要パートナーとの交渉においては、VPが直接関与し成約をリードします。
-
-4) 新規海外市場・パートナーシップの開拓
-tripla Nexus・tripla Linkを活用したインバウンド集客サービスの拡販を含め、新たな海外市場への参入戦略を立案・実行します。現地OTA・PMS・旅行会社等との戦略的パートナーシップの構築においても主導的な役割を担います。
-
-5) 業績のタイムリーなモニタリングとリカバリーアクションの策定と実行
-各拠点の業績目標に対する進捗をタイムリーな把握し、進捗状況に応じた柔軟なアクションの見直しを行います。また、PMI統合の達成状況についても定期的にレビューを実施し、遅延や課題が発生した場合には迅速に対処します。
-
-6) 経営チームへの業務報告
-定例で実施される経営会議にて、経営チームへの業務報告を実施します。自身の年間目標に対する進捗、抱えている課題とそれに対する具体的なアクションを正確に把握していただくことが求められます。
-
-7) 活気・情熱あるチームビルディング
-海外拠点メンバーを含むチーム全体と積極的な意見交換・ノウハウの共有を行うことは非常に重要です。多様な文化・言語背景を持つメンバーが一体となって目標に向かえる、活気と情熱あるチームビルディングに貢献いただくことが求められます。
-
-
-部署
-International Business & PMI Department</p>
+フルフレックス制（実働8時間）で自律的な働き方が可能な一方、基本は出社スタイルでチームの一体感も大切にしている。リモート偏重でも管理偏重でもない、ちょうど良いバランス感覚を持つ会社。</div>
                     </div>
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm">
-                        <div><span class="font-bold text-gray-600 block mb-1">応募資格・詳細</span><p class="text-gray-700 whitespace-pre-wrap">必要スキル・経験
-・ビジネスレベルの英語力（スピーキング・ライティング共に必須）
+
+                    <div class="border-t border-gray-100 pt-6 mb-6">
+                        <h4 class="text-sm font-bold text-gray-400 uppercase tracking-wider mb-4">代表プロフィール</h4>
+                        <div class="bg-gray-50 rounded-xl p-4">
+                            <p class="text-xs text-morichRed font-bold mb-1">代表取締役 CEO</p>
+                            <p class="text-base font-bold text-gray-900 mb-2">高橋 和久 氏</p>
+                            <p class="text-sm text-gray-600 whitespace-pre-wrap leading-relaxed">北海道大学大学院工学研究科卒業。株式会社TKK入社後、Wake Forest UniversityにてMBAを取得。フィリップモリスジャパン合同会社、A.T.カーニー株式会社にてコンサル業・国内外の営業・マネジメント業務を経験。アマゾンジャパン合同会社のファッション事業部長、日本コカ･コーラ株式会社のEC事業部長を経て、2015年に株式会社umami（現・tripla株式会社）に取締役として入社。2016年に代表取締役CEOに就任。</p>
+                        </div>
+                    </div>
+
+                    <div class="border-t border-gray-100 pt-6 mb-6">
+                        <h3 class="text-lg font-bold text-gray-900 mb-4 flex items-center">
+                            <span class="inline-block w-2 h-4 bg-morichRed mr-2 rounded-sm"></span>募集ポジション：Vice President International Business & PMI
+                        </h3>
+                        <div class="bg-slate-50 rounded-xl p-5 space-y-4">
+                            <div>
+                                <h4 class="text-xs font-bold text-gray-400 uppercase mb-1">業務内容 ＆ 職責</h4>
+                                <div class="text-sm text-gray-700 whitespace-pre-wrap leading-relaxed"><span class="font-bold text-slate-600">[役割と責任]</span>
+海外事業の成長とM&A後のPMIを担う部署の責任者であり、且つ会社全体の執行役員であるため、全社の業績目標に対して責任を持ちます。営業収益と純利益の達成を目指しつつ、主たるKPIは1. 海外拠点における契約施設数・営業収益の成長、2. M&A子会社のPMI統合達成率です。海外各拠点のローカルチームと緊密に連携しながら海外拠点のGMをリードしつつ、将来的なチーム組成と強化を進めます。
+
+<span class="font-bold text-slate-600">[主な職責範囲]</span>
+1) PMI戦略の立案と実行：M&Aにより傘下に入った子会社（BookandLink、Surehigh、Endurance等）の統合計画を策定・実行。
+2) 海外拠点のビジネス成長推進：韓国・台湾・インドネシア・タイ・フィリピン等の各拠点における成長戦略の立案。
+3) 海外ローカルチームとの連携と支援：営業・オンボーディング・CS業務の支援、大型アカウント提案への直接関与。
+4) 新規海外市場・パートナーシップの開拓：インバウンド集客サービスの拡販、現地OTA・PMS等との戦略的アライアンス構築。
+5) 業績のタイムリーなモニタリングとリカバリーアクションの策定と実行。
+6) 経営チームへの業務報告、7) 活気・情熱あるチームビルディング。</div>
+                            </div>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 pt-2 border-t border-gray-200/60">
+                                <div>
+                                    <h4 class="text-xs font-bold text-gray-400 uppercase mb-1">応募資格</h4>
+                                    <div class="text-sm text-gray-700 whitespace-pre-wrap"><span class="font-bold text-slate-500 text-xs block">[必要スキル・経験]</span>・ビジネスレベルの英語力（スピーキング・ライティング共に必須）
 ・企業法務・ガバナンス実務の基礎知識
 ・AIツール（生成AI・リーガルテック等）を実務に活用できるITリテラシー
 ・管理部門での実務経験（5年以上）
 ・国内または海外の4年制大学での学士
 
-歓迎するスキル・経験
-・内部統制の整備・運用支援の経験（海外拠点向けであれば尚可）
+<span class="font-bold text-slate-500 text-xs block mt-2">[歓迎するスキル・経験]</span>・内部統制の整備・運用支援の経験（海外拠点向けであれば尚可）
 ・海外子会社の設立、管理、または清算等に関わった実務経験
 ・IR・株主対応、または投資家向け英文ドキュメントの作成・管理の補助経験
-・法科大学院修了、またはパラリーガルとしての実務経験</p></div>
-                        <div><span class="font-bold text-gray-600 block mb-1">求める人物像</span><p class="text-gray-700 whitespace-pre-wrap">急成長するトリプラのグローバル展開を牽引する人物を求めています。具体的には以下のような方を求めています。
-1. 結果・目標に対する強いコミットを持っている。
-2. 俯瞰的、包括的な視点に立って判断ができる。
-3. 顧客・パートナー視点に立った判断ができる。
-4. 定量的なデータ分析に基づいた判断ができる。
-5. PDCAサイクルを自主的に回せる。
-6. スピード感を持ち、論理的に考えた上で、海外市場における事業推進が行える。
-7. 多様な文化・言語背景を持つステークホルダーに対しても、分かりやすい説明ができる高いコミュニケーション力がある。
-8. M&AおよびPMIの実務経験を持ち、複数の組織・チームを統合・推進できる。
-9. 成長意欲、学習意欲がある。
-10. 変化や挑戦に対して好意的である。</p></div>
-                        <div><span class="font-bold text-gray-600 block mb-1">勤務地</span><p class="text-gray-700">東京</p></div>
-                        <div><span class="font-bold text-gray-600 block mb-1">リモートワーク</span><p class="text-gray-700">ハイブリッド勤務</p></div>
-                        <div><span class="font-bold text-gray-600 block mb-1">副業</span><p class="text-gray-700">条件によって「可」</p></div>
+・法科大学院修了、またはパラリーガルとしての実務経験</div>
+                                </div>
+                                <div>
+                                    <h4 class="text-xs font-bold text-gray-400 uppercase mb-1">勤務環境 ＆ 求める人物像</h4>
+                                    <div class="text-sm text-gray-700">
+                                        <p><strong>勤務地:</strong> 東京</p>
+                                        <p><strong>リモートワーク:</strong> ハイブリッド勤務</p>
+                                        <p><strong>副業:</strong> 条件によって「可」</p>
+                                        <p class="mt-2 text-xs text-gray-500 leading-normal"><strong>求める人物像:</strong> 結果への強いコミット、包括的かつ定量的なデータ分析に基づく判断力、多様な文化背景を持つ相手への高いコミュニケーション力、変化や挑戦を好むマインドを持つグローバルリーダーを歓迎。</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="border-t border-gray-100 pt-4 flex flex-wrap gap-4">
+                        <a href="https://tripla.io/" target="_blank" class="inline-flex items-center text-sm font-medium text-morichRed hover:underline">
+                            <svg class="w-4 h-4 mr-1.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+                            企業オフィシャルサイト
+                        </a>
                     </div>
                 </div>
-            </div>
+            </section>
 
-            <div class="space-y-3">
-                <h3 class="text-xs font-bold text-gray-400 uppercase tracking-wider">外部リンク</h3>
-                <div class="flex flex-wrap gap-3">
-                    <a href="https://tripla.io/" target="_blank" class="inline-flex items-center gap-1.5 text-xs font-bold bg-gray-100 hover:bg-gray-200 text-gray-700 px-3 py-2 rounded transition-colors">コーポレートサイト <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg></a>
-                </div>
-            </div>
-        </section>
+            <section id="comp-doctors" class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden pt-4 scroll-mt-20">
+                <div class="p-6 md:p-8">
+                    <div class="flex flex-wrap gap-2 mb-3">
+                        <span class="px-3 py-1 bg-red-100 text-morichRed text-xs font-bold rounded-full">海外 M&A・PMI マネージャー／シニアマネージャー候補（経営企画）</span>
+                    </div>
+                    <h2 class="text-3xl md:text-4xl font-black text-gray-900 tracking-tight mb-6">ドクターズ株式会社</h2>
+                    
+                    <div class="bg-slate-50 border border-slate-100 rounded-xl p-4 md:p-5 mb-8">
+                        <p class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-3">Corporate Overview</p>
+                        <div class="overflow-x-auto">
+                            <table class="w-full text-sm text-left">
+                                <tbody class="divide-y divide-gray-200/60">
+                                    <tr>
+                                        <th class="py-3 pr-4 font-bold text-gray-600 w-32 whitespace-nowrap">本社住所</th>
+                                        <td class="py-3 text-gray-800">〒105-0011 東京都港区芝公園2-3-6 PMO浜松町II 5階</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="py-3 pr-4 font-bold text-gray-600 w-32 whitespace-nowrap">設立</th>
+                                        <td class="py-3 text-gray-800">2016年 (2019年10月より現事業開始)</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="py-3 pr-4 font-bold text-gray-600 w-32 whitespace-nowrap">上場区分</th>
+                                        <td class="py-3 text-gray-800">未上場 (NASDAQ上場準備本格化)</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
 
-        <section id="company-4" class="bg-white rounded-xl shadow-sm border border-gray-200 p-6 md:p-10 space-y-8 scroll-mt-36">
-            <div class="space-y-3">
-                <div class="flex flex-wrap gap-2">
-                    <span class="bg-gray-800 text-white text-xs font-bold px-2.5 py-1 rounded">海外 M&A・PMI マネージャー／シニアマネージャー候補（経営企画）</span>
-                </div>
-                <h2 class="text-3xl md:text-4xl font-black text-gray-900 tracking-tight">ドクターズ株式会社</h2>
-            </div>
-
-            <div class="bg-overviewBg rounded-lg p-5">
-                <h3 class="text-xs font-bold text-gray-500 uppercase tracking-wider mb-3">Corporate Overview</h3>
-                <div class="overflow-x-auto">
-                    <table class="w-full text-sm text-left">
-                        <tbody>
-                            <tr class="border-b border-gray-200"><th class="py-2.5 w-32 font-bold text-gray-600">本社住所</th><td class="py-2.5 text-gray-900">〒105-0011 東京都港区芝公園2-3-6 PMO浜松町II 5階</td></tr>
-                            <tr class="border-b border-gray-200"><th class="py-2.5 font-bold text-gray-600">設立</th><td class="py-2.5 text-gray-900">2016年（事業開始2019年10月）</td></tr>
-                            <tr class="border-b border-gray-200"><th class="py-2.5 font-bold text-gray-600">従業員数</th><td class="py-2.5 text-gray-900"></td></tr>
-                            <tr><th class="py-2.5 font-bold text-gray-600">上場区分</th><td class="py-2.5 text-gray-900">未上場</td></tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-
-            <div class="space-y-4">
-                <h3 class="text-lg font-bold border-l-4 border-gray-900 pl-3">企業紹介</h3>
-                <p class="whitespace-pre-wrap text-gray-700 leading-relaxed text-sm md:text-base">ドクターズ株式会社は、医療現場の知見とデジタルを掛け合わせ、医療DXの社会実装を推進するプラットフォーム企業です。2021年11月にはシリーズB資金調達を実施し、事業拡大と基盤強化を進めてきました。約40万人の医療従事者、約7.5万施設の医療機関、700名超のエキスパート医師ネットワークを基盤に、事業開発支援「Doctors Hub®」、医療DX・デジタルヘルス総合支援「Doctors Next®」、医療・ヘルスケアAIプラットフォーム「Doctors Station® AI」などを展開。
+                    <div class="prose max-w-none text-gray-700 leading-relaxed whitespace-pre-wrap mb-8">ドクターズ株式会社は、医療現場の知見とデジタルを掛け合わせ、医療DXの社会実装を推進するプラットフォーム企業です。2021年11月にはシリーズB資金調達を実施し、事業拡大と基盤強化を進めてきました。約40万人の医療従事者、約7.5万施設の医療機関、700名超のエキスパート医師ネットワークを基盤に、事業開発支援「Doctors Hub®」、医療DX・デジタルヘルス総合支援「Doctors Next®」、医療・ヘルスケアAIプラットフォーム「Doctors Station® AI」などを展開。
 国内にとどまらず、さらに直近では米国クリニックを含む実証環境を活用したグローバル展開も進んでおり、日本発で医療DXの社会実装を広げるフェーズに入っています。単なる海外進出ではなく、日本で培った医療DXの仕組みを海外のリアルな医療現場で磨き込み、将来的な横展開につなげていく構想です。加えて、B2B OEM事業、B2Cオンラインサービス、医療機関Roll up＆DX支援、Global Careサービスなど、Healthcare OSを軸に複数事業を展開しています。
 世界のデジタルヘルス市場は今後200兆円規模へ拡大が見込まれ、日本においても少子高齢化で従来産業が縮小傾向にあるなか、デジタルヘルスは成長産業として注目され社会的意義と成長性を兼ね備え、日本の医療構造を本質的に変革していく挑戦に携われます。デジタル技術と医療・ヘルスケアを融合させた「デジタルヘルス」分野で、新たな“医療DXインフラ”を創出している企業です。
 
@@ -486,12 +556,14 @@ International Business & PMI Department</p>
 ・LA SUITE社：「うめきた温泉 蓮」へのOEM提供。温浴×医療DXによるウェルネス体験を実現。
 ・ビーウィズ（パソナグループ）：「SOKUSAI Lab」を共同開発。企業の健康経営を支援（2025年正式リリース）。
 ・NTTビジネスソリューションズ：「オンラインSASクリニック」を共同開発。SAS診療をオンライン完結（2024年提供開始）。
-・業界大手との資本業務提携：スズケン（医療機関DX支援）／みずほFG（医療DXファイナンス）／キヤノンITS（医療画像共同開発）</p>
-            </div>
+・業界大手との資本業務提携：スズケン（医療機関DX支援）／みずほFG（医療DXファイナンス）／キヤノンITS（医療画像共同開発）</div>
 
-            <div class="border-2 border-morich bg-morich/5 rounded-lg p-5 md:p-6 space-y-3">
-                <h3 class="text-morich text-lg font-black tracking-wider flex items-center gap-2">★ morichオススメPoint</h3>
-                <p class="whitespace-pre-wrap text-gray-800 text-sm md:text-base font-medium">★IPO準備中
+                    <div class="morich-highlight rounded-xl p-5 md:p-6 mb-8 border-l-4">
+                        <h4 class="text-base font-black text-morichRed flex items-center mb-3">
+                            <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                            morichオススメPoint
+                        </h4>
+                        <div class="text-sm text-gray-700 space-y-3 whitespace-pre-wrap">★IPO準備中
 ★過去複数名入社実績アリ
 
 ■柳川社長の想い
@@ -505,35 +577,30 @@ International Business & PMI Department</p>
 非医療企業の「医療分野参入の新規事業創出支援（コンサルティング）」と、病院・クリニック・薬局などへの「経営・DX支援」。後者は独自性が強く、グループで医療法人格を保有し、M&Aにより33施設を直営。運用・事務局の業務改善から診療・患者管理・予約・マーケティングまで現場改善を推進し、システム開発も内製化して現場運用とプロダクトが循環する構造を作っています。
 直営33施設を持つことで、テクノロジーの適用が「検証—改善—展開」と循環し、成果が収益に直結しやすい。コンサルタントと開発が一体で動く内製体制により、要件定義から運用設計までの橋渡しが迅速。
 
-■成長性と今後の展望   
+■成長性と今後の展望  
 - 創業から約6年で急成長。毎年200%以上の成長を継続し、直近は売上250%成長。「通常企業の20～30%成長」に対し約12倍のスピード成長を最少人数で実現中。 
  - 売上規模は国内ヘルスケア業界で「五本の指」に入る水準に到達。
- - NASDAQでの上場準備を本格化。国内M&Aと海外展開を両輪化。</p>
-            </div>
+ - NASDAQでの上場準備を本格化。国内M&Aと海外展開を両輪化。</div>
+                    </div>
 
-            <div class="space-y-4">
-                <h3 class="text-lg font-bold border-l-4 border-gray-900 pl-3">代表プロフィール</h3>
-                <p class="whitespace-pre-wrap text-gray-700 leading-relaxed text-sm md:text-base">◆代表取締役 兼 CEO 柳川 貴雄氏
-2007年信州大学医学部医学科卒業。2009年信州大学付属病院にて初期研修過程終了。脳神経外科専門医・指導医資格取得。これまでに2500例以上の脳外科手術を執刀。
+                    <div class="border-t border-gray-100 pt-6 mb-6">
+                        <h4 class="text-sm font-bold text-gray-400 uppercase tracking-wider mb-4">代表プロフィール</h4>
+                        <div class="bg-gray-50 rounded-xl p-4">
+                            <p class="text-xs text-morichRed font-bold mb-1">代表取締役 兼 CEO</p>
+                            <p class="text-base font-bold text-gray-900 mb-2">柳川 貴雄 氏</p>
+                            <p class="text-sm text-gray-600 whitespace-pre-wrap leading-relaxed">2007年信州大学医学部医学科卒業。2009年信州大学付属病院にて初期研修過程終了。脳神経外科専門医・指導医資格取得。これまでに2500例以上の脳外科手術を執刀。
 2016年に一般社団法人IoMT学会を立ち上げ、理事就任。IoTと医療の連携の普及に努める。2018年7月からは、株式会社ZAIKENを創業。超小型遠隔連続心電図デバイスを用いた遠隔IoT連続心電図検査サービス「医心電診」を運営。2019年10月にドクターズ株式会社の事業を開始し、400名以上の専門医を中心とした日本初のシステムである、医療専門家クラウドソーシング事業を立ち上げ、超少子高齢化新時代に向けた医療のIT/IoT化を推し進めている。</p>
-            </div>
+                        </div>
+                    </div>
 
-            <div class="bg-gray-50 border border-gray-200 rounded-lg p-5 space-y-6">
-                <h3 class="text-lg font-bold text-gray-900 border-b border-gray-200 pb-2">JOB情報</h3>
-                <div class="space-y-4">
-                    <div>
-                        <h4 class="text-sm font-bold text-gray-500 uppercase tracking-wider mb-1">業務内容</h4>
-                        <p class="whitespace-pre-wrap text-sm text-gray-700 leading-relaxed">ドクターズは、約40万人の医療従事者と約7.5万施設の医療機関、さらに大学教授クラスを含む約700名の高度専門医ネットワークを有する、日本有数の医療ネットワークを基盤とし、AIをはじめとするテクノロジーをかけ合わせたヘルスケアプラットフォーム事業を行う企業です。
-
-このヘルスケアプラットフォームを用いて、医療現場の知見と企業の技術・サービスをつなぐことで、治療や診療から日常における食や運動まで幅広いソリューションを多数の大手パートナーとともに構築しています。  
-
-ドクターズは、ビジネスとメディカルの橋渡しを通じて、国内及びグローバル市場におけるデジタルヘルスエコシステムの持続的な発展とイノベーションの創出を支援しています。
-
-
-【業務概要】
-グローバル市場におけるヘルスケア事業の成長を加速するため、海外M&Aの実務を主体的に推進できる担当者を募集します。経営陣直下で、リサーチから交渉・PMIまで一貫してリードいただくポジションです。
-
-ドクターズのヘルスケアプラットフォーム事業を拡大するため、アメリカをはじめ世界の様々な地域と国における土台となる医療機関ネットワーク基盤を構築し、グローバル規模で患者や医師に貢献することのできる仕事です。
+                    <div class="border-t border-gray-100 pt-6 mb-6">
+                        <h3 class="text-lg font-bold text-gray-900 mb-4 flex items-center">
+                            <span class="inline-block w-2 h-4 bg-morichRed mr-2 rounded-sm"></span>募集ポジション：海外 M&A・PMI マネージャー／シニアマネージャー候補（経営企画）
+                        </h3>
+                        <div class="bg-slate-50 rounded-xl p-5 space-y-4">
+                            <div>
+                                <h4 class="text-xs font-bold text-gray-400 uppercase mb-1">業務概要 ＆ 事業部詳細</h4>
+                                <div class="text-sm text-gray-700 whitespace-pre-wrap leading-relaxed">グローバル市場におけるヘルスケア事業の成長を加速するため、海外M&Aの実務を主体的に推進できる担当者を募集します。経営陣直下で、リサーチから交渉・PMIまで一貫してリードいただくポジションです。
 
 ・海外市場における成長戦略の立案および実行推進
 ・海外新規事業の企画・立ち上げ・グロース
@@ -543,90 +610,90 @@ International Business & PMI Department</p>
 ・PMIにおける統合戦略の設計および実行リード
 ・現地パートナー／専門家との連携およびプロジェクト推進
 
-【ポジションの魅力】
-・グローバル市場での事業開発およびM&Aを一気通貫で経験できる
-・経営直下で、海外戦略の中核を担えるポジション
-・将来的に海外事業責任者／経営メンバーを目指せる
-
-
-【事業概要】
-◆DoctorsHub™『作る』
-企業と医療専門家が協力し、医療・デジタルヘルスサービスの開発を支援する事業部です。単に企業視点でサービスを作るのではなく、700名の専門医と連携し、実際の医療現場の知見を活かしながら開発を進めることが特徴です。
-
-◆Doctors Next® 『拡げる』
-医療・デジタルヘルスケアサービスを医療現場へ浸透させるための流通・拡販支援を行う事業部です。多くの企業が新しいサービスを開発していますが、それらが医療機関で実際に導入・活用されなければ意味がありません。そこで、ドクターズネクストが医療現場への流通ルートの構築と拡販支援を担います。
-
-◆Doctors Station®『届ける』
-企業がB2C向けのヘルスケアサービスを構築するためのプラットフォームです。チーム医療で患者を総合的に支援する、オンライン医療支援サービスが構築可能なフルパッケージを提供します。総合病院さながらの初期相談から問診、トリアージ、診療（オンライン診療・対面診療）への流れを全てオンラインで実現。様々な検査や治療に対応したデジタルヘルスサービスを組み合わせることも可能で、本格的な医療サービスへとステップアップすることができます。</p>
-                    </div>
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm">
-                        <div><span class="font-bold text-gray-600 block mb-1">応募資格・詳細</span><p class="text-gray-700 whitespace-pre-wrap">必須スキル	
-・事業会社またはコンサルティングファームにおける経営企画／事業開発経験（3年以上）
+◆DoctorsHub™『作る』：企業と医療専門家が協力し、医療・デジタルヘルスサービスの開発を支援する事業。
+◆Doctors Next® 『拡げる』：医療・デジタルヘルスケアサービスを医療現場へ浸透させるための流通・拡販支援事業。
+◆Doctors Station®『届ける』：オンライン医療支援サービスが構築可能なフルパッケージを提供するプラットフォーム。</div>
+                            </div>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 pt-2 border-t border-gray-200/60">
+                                <div>
+                                    <h4 class="text-xs font-bold text-gray-400 uppercase mb-1">応募資格</h4>
+                                    <div class="text-sm text-gray-700 whitespace-pre-wrap"><span class="font-bold text-slate-500 text-xs block">[必須スキル]</span>・事業会社またはコンサルティングファームにおける経営企画／事業開発経験（3年以上）
 ・財務・会計知識（PL／BS／CFの理解）
 ・プロジェクト推進力およびステークホルダーマネジメント能力
 ・英語でのビジネスコミュニケーション能力
 
-歓迎スキル	
-・海外事業の立ち上げまたはグロース経験
+<span class="font-bold text-slate-500 text-xs block mt-2">[歓迎スキル]</span>・海外事業の立ち上げまたはグロース経験
 ・クロスボーダーM&Aの実務経験
 ・PMIの実務経験
-・医療／ヘルスケア業界での業務経験</p></div>
-                        <div><span class="font-bold text-gray-600 block mb-1">求める人物像</span><p class="text-gray-700 whitespace-pre-wrap">・グローバル環境で主体的に意思決定し、実行できる方
-・不確実性の高い市場でも前に進める推進力を持つ方
-・戦略と実行の両方に責任を持てる方</p></div>
-                        <div><span class="font-bold text-gray-600 block mb-1">勤務地</span><p class="text-gray-700">東京</p></div>
-                        <div><span class="font-bold text-gray-600 block mb-1">リモートワーク</span><p class="text-gray-700">ハイブリッド勤務</p></div>
-                        <div><span class="font-bold text-gray-600 block mb-1">副業</span><p class="text-gray-700">不可</p></div>
+・医療／ヘルスケア業界での業務経験</div>
+                                </div>
+                                <div>
+                                    <h4 class="text-xs font-bold text-gray-400 uppercase mb-1">勤務環境 ＆ 特典</h4>
+                                    <div class="text-sm text-gray-700">
+                                        <p><strong>勤務地:</strong> 東京</p>
+                                        <p><strong>リモートワーク:</strong> ハイブリッド勤務</p>
+                                        <p><strong>副業:</strong> 不可</p>
+                                        <p class="mt-2 text-xs text-slate-500 leading-normal"><strong>魅力:</strong> 経営直下で海外戦略の中核を担い、将来的に海外事業責任者や経営メンバーを目指せるエキサイティングなステージです。</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="border-t border-gray-100 pt-4 flex flex-wrap gap-4">
+                        <a href="https://doctors-inc.jp/" target="_blank" class="inline-flex items-center text-sm font-medium text-morichRed hover:underline">
+                            <svg class="w-4 h-4 mr-1.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+                            企業オフィシャルサイト
+                        </a>
                     </div>
                 </div>
-            </div>
+            </section>
 
-            <div class="space-y-3">
-                <h3 class="text-xs font-bold text-gray-400 uppercase tracking-wider">外部リンク</h3>
-                <div class="flex flex-wrap gap-3">
-                    <a href="https://doctors-inc.jp/" target="_blank" class="inline-flex items-center gap-1.5 text-xs font-bold bg-gray-100 hover:bg-gray-200 text-gray-700 px-3 py-2 rounded transition-colors">コーポレートサイト <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg></a>
-                </div>
-            </div>
-        </section>
+            <section id="comp-lvn" class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden pt-4 scroll-mt-20">
+                <div class="p-6 md:p-8">
+                    <div class="flex flex-wrap gap-2 mb-3">
+                        <span class="px-3 py-1 bg-red-100 text-morichRed text-xs font-bold rounded-full">東証グロース</span>
+                        <span class="px-3 py-1 bg-gray-100 text-gray-600 text-xs font-bold rounded-full">M&A担当</span>
+                    </div>
+                    <h2 class="text-3xl md:text-4xl font-black text-gray-900 tracking-tight mb-6">リビン・テクノロジーズ株式会社</h2>
+                    
+                    <div class="bg-slate-50 border border-slate-100 rounded-xl p-4 md:p-5 mb-8">
+                        <p class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-3">Corporate Overview</p>
+                        <div class="overflow-x-auto">
+                            <table class="w-full text-sm text-left">
+                                <tbody class="divide-y divide-gray-200/60">
+                                    <tr>
+                                        <th class="py-3 pr-4 font-bold text-gray-600 w-32 whitespace-nowrap">本社住所</th>
+                                        <td class="py-3 text-gray-800">〒103-0012 東京都中央区日本橋堀留町1-8-12 ホウライ堀留ビル8階</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="py-3 pr-4 font-bold text-gray-600 w-32 whitespace-nowrap">設立</th>
+                                        <td class="py-3 text-gray-800">2004年1月</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="py-3 pr-4 font-bold text-gray-600 w-32 whitespace-nowrap">上場区分</th>
+                                        <td class="py-3 text-gray-800">東証グロース、名証メイン</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
 
-        <section id="company-5" class="bg-white rounded-xl shadow-sm border border-gray-200 p-6 md:p-10 space-y-8 scroll-mt-36">
-            <div class="space-y-3">
-                <div class="flex flex-wrap gap-2">
-                    <span class="bg-gray-800 text-white text-xs font-bold px-2.5 py-1 rounded">M&A担当</span>
-                    <span class="bg-blue-600 text-white text-xs font-bold px-2.5 py-1 rounded">東証グロース</span>
-                </div>
-                <h2 class="text-3xl md:text-4xl font-black text-gray-900 tracking-tight">リビン・テクノロジーズ株式会社</h2>
-            </div>
-
-            <div class="bg-overviewBg rounded-lg p-5">
-                <h3 class="text-xs font-bold text-gray-500 uppercase tracking-wider mb-3">Corporate Overview</h3>
-                <div class="overflow-x-auto">
-                    <table class="w-full text-sm text-left">
-                        <tbody>
-                            <tr class="border-b border-gray-200"><th class="py-2.5 w-32 font-bold text-gray-600">本社住所</th><td class="py-2.5 text-gray-900">〒103-0012 東京都中央区日本橋堀留町1-8-12 ホウライ堀留ビル8階</td></tr>
-                            <tr class="border-b border-gray-200"><th class="py-2.5 font-bold text-gray-600">設立</th><td class="py-2.5 text-gray-900">2004年1月</td></tr>
-                            <tr class="border-b border-gray-200"><th class="py-2.5 font-bold text-gray-600">従業員数</th><td class="py-2.5 text-gray-900"></td></tr>
-                            <tr><th class="py-2.5 font-bold text-gray-600">上場区分</th><td class="py-2.5 text-gray-900">東証グロース</td></tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-
-            <div class="space-y-4">
-                <h3 class="text-lg font-bold border-l-4 border-gray-900 pl-3">企業紹介</h3>
-                <p class="whitespace-pre-wrap text-gray-700 leading-relaxed text-sm md:text-base">2004年1月に設立。インターネット広告代理店としてスタートし、その後EC事業やサイト運営など複数の事業に挑戦しつつ、現在は主に「不動産 × Webテクノロジー」に特化したビジネスを展開している、東証グロース上場企業です。
+                    <div class="prose max-w-none text-gray-700 leading-relaxed whitespace-pre-wrap mb-8">2004年1月に設立。インターネット広告代理店としてスタートし、その後EC事業やサイト運営など複数の事業に挑戦しつつ、現在は主に「不動産 × Webテクノロジー」に特化したビジネスを展開している、東証グロース上場企業です。
 主に、不動産に関する情報・サービスをオンラインで媒介・マッチングするプラットフォーム事業と、不動産会社（仲介・買取・管理など）向けのクラウド型DX支援ツールの開発・運営を行っています。
 
 主力サービスである不動産売却マッチングプラットフォーム「リビンマッチ」は、成約ベースの成功報酬モデル（利用企業は成果があった場合にのみ費用が発生）を武器に、高い費用対効果で加盟企業を拡大。年間24万件以上の査定依頼を受け付けており、国内最大級の規模を誇ります。
 さらに、不動産会社向けのSaaS型業務支援ツールや集客支援サービスなどを展開し、収益の多様化も進行中。業界のDXインフラとしての地位確立を目指しています。
 単なる「不動産情報サイト」にとどまらず、不動産会社と所有者（あるいは利用者）を結ぶマッチング機能に加え、不動産会社の業務効率化・DX支援を包括する幅広いサービス展開が同社の大きな特徴です。
 
-組織は今期から事業別ユニット制へと移行しましたが、各ユニットの体制はまだ発展途上であり、事業推進力やマネジメント体制が相対的に弱いという課題を抱えています。今後は、各ユニットを自律的かつ戦略的に動かせる強い組織へと強化していきたいと考えています。</p>
-            </div>
+組織は今期から事業別ユニット制へと移行しましたが、各ユニットの体制はまだ発展途上であり、事業推進力やマネジメント体制が相対的に弱いという課題を抱えています。今後は、各ユニットを自律的かつ戦略的に動かせる強い組織へと強化していきたいと考えています。</div>
 
-            <div class="border-2 border-morich bg-morich/5 rounded-lg p-5 md:p-6 space-y-3">
-                <h3 class="text-morich text-lg font-black tracking-wider flex items-center gap-2">★ morichオススメPoint</h3>
-                <p class="whitespace-pre-wrap text-gray-800 text-sm md:text-base font-medium">★社長リレーション
+                    <div class="morich-highlight rounded-xl p-5 md:p-6 mb-8 border-l-4">
+                        <h4 class="text-base font-black text-morichRed flex items-center mb-3">
+                            <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                            morichオススメPoint
+                        </h4>
+                        <div class="text-sm text-gray-700 space-y-3 whitespace-pre-wrap">★社長リレーション
 
 2004年の設立以来、不動産テックの先駆者として「住生活の困ったをゼロにする」を掲げる成長企業です。
 主力の「リビンマッチ」は、年間マッチング実績24万件、加盟企業数2,200社を誇る日本最大級の不動産査定・マッチングプラットフォームであり、この市場自体を創造してきた先行者メリットと圧倒的な優位性を持っています。
@@ -638,87 +705,108 @@ Webメディアで獲得した豊富な見込み顧客データを活用し、�
 東証グロース・名証メインの二市場に上場しており、盤石な経営基盤があります。一方で、現在は「5年で売上3倍」を目指す変革期。M&Aの推進や新規事業（リアル仲介）の立ち上げなど、ダイナミックな成長フェーズに携われます。
 
 • 「デジタル×リアル」の新規事業立ち上げ
-年間24万件の問い合わせデータという強力な資産（見込み客情報）を武器に、ゼロから不動産仲介事業を立ち上げます。勝てるアセットを持って新規事業に挑める稀オな環境です。
+年間24万件の問い合わせデータという強力な資産（見込み客情報）を武器に、ゼロから不動産仲介事業を立ち上げます。勝てるアセットを持って新規事業に挑める稀有な環境です。
 
 • 次世代経営人材の募集
-2023年9月より事業部制（ユニット制）へ移行し、事業責任者や、その右腕となる「No.2」ポジションのニーズが急騰しています。将来のCOO候補や事業責任者として、経営視座を持って働ける環境です。</p>
-            </div>
+2023年9月より事業部制（ユニット制）へ移行し、事業責任者や、その右腕となる「No.2」ポジションのニーズが急騰しています。将来のCOO候補や事業責任者として、経営視座を持って働ける環境です。</div>
+                    </div>
 
-            <div class="space-y-4">
-                <h3 class="text-lg font-bold border-l-4 border-gray-900 pl-3">代表プロフィール</h3>
-                <p class="whitespace-pre-wrap text-gray-700 leading-relaxed text-sm md:text-base">・代表取締役社長 川合大無（かわい・だいむ）氏
-1975年生まれ。東京農業大学卒業後、ニチモウ株式会社に入社。 バリューコマース株式会社、株式会社サイバーエージェントを経て、2004年に株式会社シースタイル（現：リビン・テクノロジーズ株式会社）を設立し代表取締役社長に就任。
+                    <div class="border-t border-gray-100 pt-6 mb-6">
+                        <h4 class="text-sm font-bold text-gray-400 uppercase tracking-wider mb-4">代表プロフィール</h4>
+                        <div class="bg-gray-50 rounded-xl p-4">
+                            <p class="text-xs text-morichRed font-bold mb-1">代表取締役社長</p>
+                            <p class="text-base font-bold text-gray-900 mb-2">川合 大無 氏</p>
+                            <p class="text-sm text-gray-600 whitespace-pre-wrap leading-relaxed">1975年生まれ。東京農業大学卒業後、ニチモウ株式会社に入社。 バリューコマース株式会社、株式会社サイバーエージェントを経て、2004年に株式会社シースタイル（現：リビン・テクノロジーズ株式会社）を設立し代表取締役社長に就任。</p>
+                        </div>
+                    </div>
 
-※森本がMCを務める「morichの部屋（YouTube）」にもご出演いただいています。ぜひご視聴ください。</p>
-            </div>
-
-            <div class="bg-gray-50 border border-gray-200 rounded-lg p-5 space-y-6">
-                <h3 class="text-lg font-bold text-gray-900 border-b border-gray-200 pb-2">JOB情報</h3>
-                <div class="space-y-4">
-                    <div>
-                        <h4 class="text-sm font-bold text-gray-500 uppercase tracking-wider mb-1">業務内容</h4>
-                        <p class="whitespace-pre-wrap text-sm text-gray-700 leading-relaxed">■募集背景
-2030年までに売上100億円、営業利益20億円という野心的な成長目標を掲げており、現在の売上高（約35億円）から約3倍 of 成長を達成するためには、M&Aが不可欠な成長戦略として位置づけられています。
-しかし、現在M&A業務は片手間で行われており、成長を加速させるため、経営企画部の下にM&A専門部隊を立ち上げる必要があります。
+                    <div class="border-t border-gray-100 pt-6 mb-6">
+                        <h3 class="text-lg font-bold text-gray-900 mb-4 flex items-center">
+                            <span class="inline-block w-2 h-4 bg-morichRed mr-2 rounded-sm"></span>募集ポジション：M&A担当
+                        </h3>
+                        <div class="bg-slate-50 rounded-xl p-5 space-y-4">
+                            <div>
+                                <h4 class="text-xs font-bold text-gray-400 uppercase mb-1">業務内容 ＆ 募集背景</h4>
+                                <div class="text-sm text-gray-700 whitespace-pre-wrap leading-relaxed">■募集背景
+2030年までに売上100億円、営業利益20億円という野心的な成長目標を掲げており、現在の売上高（約35億円）から約3倍の成長を達成するためには、M&Aが不可欠な成長戦略として位置づけられています。しかし、現在M&A業務は兼務で行われており、成長を加速させるため、経営企画部の下にM&A専門部隊を立ち上げる必要があります。
 
 ■想定される業務
-経営企画部内のM&A専門部隊の一員として、M&A戦略の立案から実行までを担う実行部隊となります。具体的には、M&A案件のソーシング（仲介ではなく自ら声かけを行う手法を志向しています）、デューデリジェンス、そして買収後のPMI（統合プロセス）までをハンズオンで推進します。</p>
+経営企画部内のM&A専門部隊の一員として、M&A戦略の立案から実行までを担う実行部隊となります。具体的には、M&A案件のソーシング（仲介ではなく自ら声かけを行う手法を志向しています）、デューデリジェンス、および買収後のPMI（統合プロセス）までをハンズオンで推進します。</div>
+                            </div>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 pt-2 border-t border-gray-200/60">
+                                <div>
+                                    <h4 class="text-xs font-bold text-gray-400 uppercase mb-1">応募資格・求める人物像</h4>
+                                    <div class="text-sm text-gray-700 whitespace-pre-wrap">管理者というより現場で手を動かせる方、自らアプローチ（テレアポなど）ができる行動力のある方。</div>
+                                </div>
+                                <div>
+                                    <h4 class="text-xs font-bold text-gray-400 uppercase mb-1">勤務環境</h4>
+                                    <div class="text-sm text-gray-700">
+                                        <p><strong>勤務地:</strong> 東京</p>
+                                        <p><strong>リモートワーク:</strong> 基本出社</p>
+                                        <p><strong>副業:</strong> 条件によって「可」</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm">
-                        <div><span class="font-bold text-gray-600 block mb-1">応募資格・詳細</span><p class="text-gray-700 whitespace-pre-wrap">管理者というより現場で手を動かせる方、テレアポなどができる方</p></div>
-                        <div><span class="font-bold text-gray-600 block mb-1">勤務地</span><p class="text-gray-700">東京</p></div>
-                        <div><span class="font-bold text-gray-600 block mb-1">リモートワーク</span><p class="text-gray-700">基本出社</p></div>
-                        <div><span class="font-bold text-gray-600 block mb-1">副業</span><p class="text-gray-700">条件によって「可」</p></div>
+
+                    <div class="border-t border-gray-100 pt-4 flex flex-wrap gap-4">
+                        <a href="https://www.lvn.co.jp/" target="_blank" class="inline-flex items-center text-sm font-medium text-morichRed hover:underline">
+                            <svg class="w-4 h-4 mr-1.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+                            企業オフィシャルサイト
+                        </a>
+                        <a href="https://morich-to.com/post-7888/" target="_blank" class="inline-flex items-center text-sm font-medium text-morichRed hover:underline">
+                            <svg class="w-4 h-4 mr-1.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                            morichの部屋 (YouTube出演回)
+                        </a>
                     </div>
                 </div>
-            </div>
+            </section>
 
-            <div class="space-y-3">
-                <h3 class="text-xs font-bold text-gray-400 uppercase tracking-wider">外部リンク</h3>
-                <div class="flex flex-wrap gap-3">
-                    <a href="https://www.lvn.co.jp/" target="_blank" class="inline-flex items-center gap-1.5 text-xs font-bold bg-gray-100 hover:bg-gray-200 text-gray-700 px-3 py-2 rounded transition-colors">コーポレートサイト <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg></a>
-                    <a href="https://morich-to.com/post-7888/" target="_blank" class="inline-flex items-center gap-1.5 text-xs font-bold bg-gray-100 hover:bg-gray-200 text-gray-700 px-3 py-2 rounded transition-colors">morichの部屋（YouTube） <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg></a>
-                </div>
-            </div>
-        </section>
+            <section id="comp-asuene" class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden pt-4 scroll-mt-20">
+                <div class="p-6 md:p-8">
+                    <div class="flex flex-wrap gap-2 mb-3">
+                        <span class="px-3 py-1 bg-red-100 text-morichRed text-xs font-bold rounded-full">N-1</span>
+                        <span class="px-3 py-1 bg-gray-100 text-gray-600 text-xs font-bold rounded-full">経営企画マネージャー</span>
+                    </div>
+                    <h2 class="text-3xl md:text-4xl font-black text-gray-900 tracking-tight mb-6">アスエネ株式会社</h2>
+                    
+                    <div class="bg-slate-50 border border-slate-100 rounded-xl p-4 md:p-5 mb-8">
+                        <p class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-3">Corporate Overview</p>
+                        <div class="overflow-x-auto">
+                            <table class="w-full text-sm text-left">
+                                <tbody class="divide-y divide-gray-200/60">
+                                    <tr>
+                                        <th class="py-3 pr-4 font-bold text-gray-600 w-32 whitespace-nowrap">本社住所</th>
+                                        <td class="py-3 text-gray-800">〒105-0001 東京都港区虎ノ門一丁目3-1 東京虎ノ門グローバルスクエア 6階</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="py-3 pr-4 font-bold text-gray-600 w-32 whitespace-nowrap">設立</th>
+                                        <td class="py-3 text-gray-800">2019年</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="py-3 pr-4 font-bold text-gray-600 w-32 whitespace-nowrap">上場区分</th>
+                                        <td class="py-3 text-gray-800">未上場 (N-1期 / IPO体制構築済)</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
 
-        <section id="company-6" class="bg-white rounded-xl shadow-sm border border-gray-200 p-6 md:p-10 space-y-8 scroll-mt-36">
-            <div class="space-y-3">
-                <div class="flex flex-wrap gap-2">
-                    <span class="bg-gray-800 text-white text-xs font-bold px-2.5 py-1 rounded">【CEO直下】経営企画マネージャー</span>
-                    <span class="bg-morich text-white text-xs font-bold px-2.5 py-1 rounded">N-1</span>
-                </div>
-                <h2 class="text-3xl md:text-4xl font-black text-gray-900 tracking-tight">アスエネ株式会社</h2>
-            </div>
-
-            <div class="bg-overviewBg rounded-lg p-5">
-                <h3 class="text-xs font-bold text-gray-500 uppercase tracking-wider mb-3">Corporate Overview</h3>
-                <div class="overflow-x-auto">
-                    <table class="w-full text-sm text-left">
-                        <tbody>
-                            <tr class="border-b border-gray-200"><th class="py-2.5 w-32 font-bold text-gray-600">本社住所</th><td class="py-2.5 text-gray-900">〒105-0001 東京都港区虎ノ門一丁目3-1 東京虎ノ門グローバルスクエア 6階</td></tr>
-                            <tr class="border-b border-gray-200"><th class="py-2.5 font-bold text-gray-600">設立</th><td class="py-2.5 text-gray-900">2019年</td></tr>
-                            <tr class="border-b border-gray-200"><th class="py-2.5 font-bold text-gray-600">従業員数</th><td class="py-2.5 text-gray-900">正社員280名（業務委託含め400名超）</td></tr>
-                            <tr><th class="py-2.5 font-bold text-gray-600">上場区分</th><td class="py-2.5 text-gray-900">未上場</td></tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-
-            <div class="space-y-4">
-                <h3 class="text-lg font-bold border-l-4 border-gray-900 pl-3">企業紹介</h3>
-                <p class="whitespace-pre-wrap text-gray-700 leading-relaxed text-sm md:text-base">「次世代によりよい世界を」をミッションに2019年に創業した、気候変動問題解決に取り組むクライメートテック企業です。
-CO2排出量見える化・削減・報告クラウドサービス「ASUENE」、サプライチェーンマネジメントクラウドサービス「ASUENE SUPPLY CHAIN」、GX・ESG人材特化型転職プラットフォーム「ASUENE CAREER」、非財務データの第三者保証事業「ASUENE VERITAS」、カーボンクレジット取引所「Carbon EX」など脱炭素・ESG領域のマルチプロダクトを提供し、企業のサスタビリティ経営をワンストップで支援しています。
+                    <div class="prose max-w-none text-gray-700 leading-relaxed whitespace-pre-wrap mb-8">「次世代によりよい世界を」をミッションに2019年に創業した、気候変動問題解決に取り組むクライメートテック企業です。
+CO2排出量見える化・削減・報告クラウドサービス「ASUENE」、サプライチェーンマネジメントクラウドサービス「ASUENE SUPPLY CHAIN」、GX・ESG人材特化型転職プラットフォーム「ASUENE CAREER」、非財務データの第三者保証事業「ASUENE VERITAS」、カーボンクレジット取引所「Carbon EX」など脱炭素・ESG領域のマルチプロダクトを提供し、企業のサステナビリティ経営をワンストップで支援しています。
 
 実績は圧倒的で、「ASUENE」は導入社数3年連続No.1、ESG評価クラウドも2年連続No.1を獲得しており、累計資金調達額は115億円に達しています。また、三井住友銀行の事業を買収・統合するなどこれまでに6社のM&Aを実施し、成長戦略の中核としています。現在は日本・米国・シンガポール・ロンドンなど世界6ヶ国に拠点を持ち、グローバル展開を加速させています。
 米誌の「2025 World’s Top GreenTech Companies」に、日本のCO2排出量見える化クラウド企業で唯一選出されるなど、世界的な評価も高い成長企業です。
 ・6ヶ国に展開（Tokyo / Singapore / Los Angeles / London / Bangkok / Cebu）
-・名古屋拠点（2026年7月1日開設予定）</p>
-            </div>
+・名古屋拠点（2026年7月1日開設予定）</div>
 
-            <div class="border-2 border-morich bg-morich/5 rounded-lg p-5 md:p-6 space-y-3">
-                <h3 class="text-morich text-lg font-black tracking-wider flex items-center gap-2">★ morichオススメPoint</h3>
-                <p class="whitespace-pre-wrap text-gray-800 text-sm md:text-base font-medium">★IPO準備中
+                    <div class="morich-highlight rounded-xl p-5 md:p-6 mb-8 border-l-4">
+                        <h4 class="text-base font-black text-morichRed flex items-center mb-3">
+                            <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                            morichオススメPoint
+                        </h4>
+                        <div class="text-sm text-gray-700 space-y-3 whitespace-pre-wrap">★IPO準備中
 
 • 圧倒的な成長資金と財務基盤：
  累計資金調達額は115億円に上り、米国展開を加速させています。スタートアップながらメガバンク（SMBC）のプロダクトを事業承継するなど、異例かつ規模の大きなM&Aも成功させています。
@@ -730,408 +818,22 @@ CO2排出量見える化・削減・報告クラウドサービス「ASUENE」�
 
 IPOできる体制は整えていますが、大型IPOを狙い市況を見ながら上場タイミングを見計らっています。
 規制・ルールメイクが厳しい欧州・米国に進出しいち早く反映していることも、優位性の一つです。
-時価総額一兆円に向かって事業急拡大中の同社、一度お話を聞いてみませんか？</p>
-            </div>
+時価総額一兆円に向かって事業急拡大中の同社、一度お話を聞いてみませんか？</div>
+                    </div>
 
-            <div class="space-y-4">
-                <h3 class="text-lg font-bold border-l-4 border-gray-900 pl-3">代表プロフィール</h3>
-                <p class="whitespace-pre-wrap text-gray-700 leading-relaxed text-sm md:text-base">・Founder 代表取締役CEO 西和田 浩平 氏
-慶應義塾大学卒業、三井物産にて日本・欧州・中南米の再生可能エネルギーの新規事業投資・M&Aを担当。ブラジル海外赴任中に分散型電源企業に出向、海外のM&A・PMI・事業投資・新規事業などを経験。
+                    <div class="border-t border-gray-100 pt-6 mb-6">
+                        <h4 class="text-sm font-bold text-gray-400 uppercase tracking-wider mb-4">代表プロフィール</h4>
+                        <div class="bg-gray-50 rounded-xl p-4">
+                            <p class="text-xs text-morichRed font-bold mb-1">Founder 代表取締役CEO</p>
+                            <p class="text-base font-bold text-gray-900 mb-2">西和田 浩平 氏</p>
+                            <p class="text-sm text-gray-600 whitespace-pre-wrap leading-relaxed">慶應義塾大学卒業、三井物産にて日本・欧州・中南米の再生可能エネルギーの新規事業投資・M&Aを担当。ブラジル海外赴任中に分散型電源企業に出向、海外のM&A・PMI・事業投資・新規事業などを経験。
 Forbes Japan Rising Star Award受賞、Forbes Japan 100選出など多数のアワードを受賞。
-2025年12月に初の著書「『世界で勝けるGX』脱炭素資本主義が動かす、再エネ×AI主導の21世紀の産業革命」を出版</p>
-            </div>
-
-            <div class="bg-gray-50 border border-gray-200 rounded-lg p-5 space-y-6">
-                <h3 class="text-lg font-bold text-gray-900 border-b border-gray-200 pb-2">JOB情報</h3>
-                <div class="space-y-4">
-                    <div>
-                        <h4 class="text-sm font-bold text-gray-500 uppercase tracking-wider mb-1">業務内容</h4>
-                        <p class="whitespace-pre-wrap text-sm text-gray-700 leading-relaxed">【アスエネについて】
-弊社は「次世代によりよい世界を。」をミッションに掲げるクライメートテック企業です。CO2排出量見える化クラウド「ASUENE」、サプライチェーンマネジメントクラウド「ASUENE SUPPLY CHAIN」など、脱炭素・ESG経営のワンストップソリューションを展開しており、日本・アジアでトップのシェアを築いています。
-
-これまでに累計115億円を調達し、7件のM&Aを実行し、国内3万社以上への導入実績を背景に、日本では脱炭素SaaS領域で事実上のNo.1ポジションを確立。現在は北米・UK（欧州）・APACを中心に海外展開を本格化しております。
-
-※経済産業省「J-Startup」、TIME誌「World's Top GreenTech Companies 2025」で世界2位に選出
-アスエネFounder CEO西和田が「Forbes JAPAN 起業家ランキング 2026」にて第5位に選出
-
-【アスエネの強み（優位性）】
-脱炭素経営のパートナーとして、包括的かつ実践的な支援が提供できること
-
- ・ワンストップソリューション： CO2排出量の可視化・算定から、具体的な削減ソリューションの提案（カーボンオフセット、再エネ電力調達）、ESG評価サービス、カーボンクレジット取引所の運営までを一気通貫で提供中。これにより、複数のツールやコンサルタントを使い分ける必要がなく、企業の脱炭素経営を包括的に支援可能。
-
- ・国内トップクラスの導入実績と信頼性：「アスエネ」シリーズは累計導入社数３万社以上で国内No.1の実績を持ち（2025年10月時点）、環境省の「環境スタートアップ大臣賞」受賞歴 や、伊藤園、ダイキン工業などの大手企業との取引や資本提携の実績有り。これらの実績が、新規顧客への高い信頼性と安心感を生んでいる。
-※導入事例の一覧 https://asuene.com/interview/
-
- ・国内外の複雑な規制への対応：  
-CDP、SBTi、CSRD、TCFD、TNFDなど、国内外の多様なサステナビリティ開示規制やイニシアチブに対応した高度なコンサルティングを提供中。特にCDPの日本唯一のスコアリングパートナーである点は、ルール形成側の知見を持つという大きな強み。
-
- ・テクノロジー活用による効率化：   
-AIを活用したCO2排出量算定の自動化など、テクノロジーを駆使することで業務工数を削減し、効率的な運用を可能に。
-
- ・サプライチェーン全体の管理支援：
-自社だけでなく、サプライチェーン全体のESG評価やCO2削減を支援するクラウドサービス「アスエネサプライチェーン」を提供し、サプライヤーの一元管理を実現。
-
-【募集背景】 
-事業・組織・グローバル展開の急拡大に伴い、CEO直下で様々なプロジェクトの企画・推進を担える経営企画人材を募集します。現在、コーポレート部門の経営企画はCFOおよび既存マネージャーが中心となって推進していますが、新たにCEO直下の専任での経営企画としてアスエネグループ全体を横断してリードできる方必要な状態です。
-
-【組織構成】
-レポートライン：CEO直下    
-連携部署：CEO／CFO／事業責任者／M&A専任チーム／海外拠点
-
-【本ポジションについて】*
-CEO西和田とともにアスエネグループ全体の成長を牽引することをミッションとし、会社全体の成長戦略の立案・実行から、社内横断プロジェクトの立案・実行など広く活躍いただくポジションです。事業計画・KPI設計・取締役会運営といった経営管理業務に留まらず、資金調達、資本業務提携、M&Aなど、会社の成長構造そのものを形作る領域に深く関与いただきます。
-
-【入社後すぐに担う業務】
-■事業計画策定・予算／中期計画 
-    * 年度／四半期の事業計画策定（Top-down × Bottom-up）
-    * KPI設計、ドライバー設計、感応度分析・シナリオプランニング
-    * 予算編成〜ローリングフォーキャスト
-    * KPIとPL／CFのブリッジ、着地見込み精度の管理
-■経営可視化・会議体運営 
-    * 週次KPIダッシュボードの設計・集計・定義管理
-    * 役員会／部門長MTG資料の作成、アジェンダ設計
-    * 月次／四半期レビュー（予実・KPIギャップ分析、改善アクション管理）
-■資本業務提携・事業パートナーシップ
-    * 経営直下の戦略提携案件・出資案件等の推進 (選任パートナーチームは別途あります)
-    * LOI／MOU策定支援、初期交渉、シナジー検証
-    * 実行後のガバナンス・モニタリング設計
-■その他、CEO直下プロジェクト
-
-【将来的にお任せしたい業務】   
-※ご志向とご経験により入社後すぐに担って頂く場合もあります。
-■ 投資家対応・戦略資料
-    * Equity Story、Factbook、定期アップデート資料の作成・刷新（英語含む）
-    * 市場・競合・財務リサーチ、簡易バリュエーション（DCF／マルチプル）
-■ファンドレイズ（Equity／Debt）
-    * 投資家ソーシング、面談設定、Q&A／DD対応
-    * データルーム運用（海外投資家対応含む）
-    * Term Sheet／投資契約のドラフトレビュー（アドバイザー・弁護士連携）
-■ M&A（サブ担当）
-    * 専任M&Aチームと連携した案件初期フェーズ支援
-    * 経営直下の戦略提携案件の推進を入り口に案件によってはM&Aへ展開
-    * 市場マッピング、シナジー試算、経営会議体への論点整理
-■横断PMO / 仕組み化
-    * OKR/KPI運用の定着、全社プロジェクトの計画・実行・モニタリング
-    * テンプレート/チェックリスト整備、データ/資料の標準化</p>
+2025年12月に初の著書「『世界で勝てるGX』脱炭素資本主義が動かす、再エネ×AI主導の21世紀の産業革命」を出版</p>
+                        </div>
                     </div>
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm">
-                        <div><span class="font-bold text-gray-600 block mb-1">応募資格・詳細</span><p class="text-gray-700 whitespace-pre-wrap">【必須スキル】
-* 戦略／業務コンサル、投資銀行、商社、または事業会社における下記のいずれかの実務経験（3年以上）   
-    （経営企画・事業企画・Corp Dev等の経験）
-* 経営管理・ファイナンススキル
-* KPI設計・管理、財務モデリング、ロジカルな資料作成の実務経験
 
-【歓迎スキル】
-* ビジネスレベルの英語力（海外投資家・海外パートナーとの会議／資料対応が可能なレベル）
-* M&A／ファンドレイズ関連業務への関与経験（財務DD、投資家対応、資料作成、交渉支援など）
-* 資本業務提携の実務（少数出資/JV/共同販路等）または大企業とのストラテジックアカウント経験
-* BI/データ基盤の知見（Looker/Tableau/BigQuery/簡易SQL）、KPI辞書の整備経験
-* 会計/法務/ガバナンスの基礎（会社法/金商法/CGコード）
-* 対象業界の理解（例：環境・エネルギー・製造業・SaaS）</p></div>
-                        <div><span class="font-bold text-gray-600 block mb-1">求める人物像</span><p class="text-gray-700 whitespace-pre-wrap">【求める人物像】
-* アスエネのMVVに共感できる方
-* 目的志向・アウトプットドリブン：仮説→検証→実装を素早く回せる
-* 未整備領域を仕組み化し、継続改善できる
-* 高いオーナーシップと誠実さ、現場に深く入り込むハンズオン姿勢</p></div>
-                        <div><span class="font-bold text-gray-600 block mb-1">勤務地</span><p class="text-gray-700">東京</p></div>
-                        <div><span class="font-bold text-gray-600 block mb-1">リモートワーク</span><p class="text-gray-700">基本出社</p></div>
-                        <div><span class="font-bold text-gray-600 block mb-1">副業</span><p class="text-gray-700">条件によって「可」</p></div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="space-y-3">
-                <h3 class="text-xs font-bold text-gray-400 uppercase tracking-wider">外部リンク</h3>
-                <div class="flex flex-wrap gap-3">
-                    <a href="https://corp.asuene.com/company" target="_blank" class="inline-flex items-center gap-1.5 text-xs font-bold bg-gray-100 hover:bg-gray-200 text-gray-700 px-3 py-2 rounded transition-colors">コーポレートサイト <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg></a>
-                    <a href="https://prtimes.jp/main/html/rd/p/000000598.000058538.html" target="_blank" class="inline-flex items-center gap-1.5 text-xs font-bold bg-gray-100 hover:bg-gray-200 text-gray-700 px-3 py-2 rounded transition-colors">プレスリリース（資金調達・M&A） <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg></a>
-                    <a href="https://prtimes.jp/main/html/rd/p/000000612.000058538.html" target="_blank" class="inline-flex items-center gap-1.5 text-xs font-bold bg-gray-100 hover:bg-gray-200 text-gray-700 px-3 py-2 rounded transition-colors">プレスリリース（起業家ランキング） <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg></a>
-                    <a href="https://asuene.com/interview/" target="_blank" class="inline-flex items-center gap-1.5 text-xs font-bold bg-gray-100 hover:bg-gray-200 text-gray-700 px-3 py-2 rounded transition-colors">導入事例一覧 <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg></a>
-                </div>
-            </div>
-        </section>
-
-        <section id="company-7" class="bg-white rounded-xl shadow-sm border border-gray-200 p-6 md:p-10 space-y-8 scroll-mt-36">
-            <div class="space-y-3">
-                <div class="flex flex-wrap gap-2">
-                    <span class="bg-gray-800 text-white text-xs font-bold px-2.5 py-1 rounded">Confidential</span>
-                    <span class="bg-gray-800 text-white text-xs font-bold px-2.5 py-1 rounded">CFO</span>
-                </div>
-                <h2 class="text-3xl md:text-4xl font-black text-gray-900 tracking-tight">コクー株式会社</h2>
-            </div>
-
-            <div class="bg-overviewBg rounded-lg p-5">
-                <h3 class="text-xs font-bold text-gray-500 uppercase tracking-wider mb-3">Corporate Overview</h3>
-                <div class="overflow-x-auto">
-                    <table class="w-full text-sm text-left">
-                        <tbody>
-                            <tr class="border-b border-gray-200"><th class="py-2.5 w-32 font-bold text-gray-600">本社住所</th><td class="py-2.5 text-gray-900">〒101-0051 東京都千代田区神田神保町3-29 帝国書院ビル5階</td></tr>
-                            <tr class="border-b border-gray-200"><th class="py-2.5 font-bold text-gray-600">設立</th><td class="py-2.5 text-gray-900">2019年</td></tr>
-                            <tr class="border-b border-gray-200"><th class="py-2.5 font-bold text-gray-600">従業員数</th><td class="py-2.5 text-gray-900"></td></tr>
-                            <tr><th class="py-2.5 font-bold text-gray-600">上場区分</th><td class="py-2.5 text-gray-900">未上場</td></tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-
-            <div class="space-y-4">
-                <h3 class="text-lg font-bold border-l-4 border-gray-900 pl-3">企業紹介</h3>
-                <p class="whitespace-pre-wrap text-gray-700 leading-relaxed text-sm md:text-base">「人財×デジタル」で社会課題を解決する成長中のITベンチャー、コクー株式会社。日本が直面する少子高齢化による労働力不足という本質的な課題に対し、“人財”と“デジタル”を融合した独自のアプローチで挑戦。特に「EXCEL女子」「RPA女子」「デジタルマーケティング女子」など、女性の力を最大限に活かしたDX人材育成・派遣サービスが話題となり、メディアにも多数取り上げられています。
-
-売上は設立以来右肩上がりを続け、IPOに向けた準備も大詰めを迎えています。事業領域はRPA、インフラ、デジタルマーケティングに加え、不動産テック事業「REALVOICE®」などの新規分野にも積極展開。2023年にはシリーズBで2億円超の資金調達を完了し、今後もCVC中心に成長資金を確保予定です。
-
-社会的評価も高く、ベストベンチャー100には5年連続選出、Forbes JAPAN WOMAN AWARDでは2年連続で上位入賞するなど、ESG・DEIにおいても先進的な取り組みを推進。働きがいのある会社（GPTW）にも選ばれ、社員満足度の高さが企業の成長を支えています。
-
-『for me , for you. 〜社員満足なくして顧客満足は成しえない〜』を掲げ、社員一人ひとりの活躍と成長を重視。今まさに、成長ドライブの中心に立ちたい方には絶好のタイミングです。</p>
-            </div>
-
-            <div class="border-2 border-morich bg-morich/5 rounded-lg p-5 md:p-6 space-y-3">
-                <h3 class="text-morich text-lg font-black tracking-wider flex items-center gap-2">★ morichオススメPoint</h3>
-                <p class="whitespace-pre-wrap text-gray-800 text-sm md:text-base font-medium">・上場を目指すIPO準備フェーズ真っ只中！
-・ベストベンチャー100に5年連続選出の実力企業
-・「女性×DX」の領域で独自ポジションを確立
-・GPTW認定企業で働きがいのある環境
-・資金調達済み＆CVCとの関係も強固
-・社員ファーストの価値観で、満足度の高い職場
-・新規事業・マネジメントポジションも続々拡大中</p>
-            </div>
-
-            <div class="space-y-4">
-                <h3 class="text-lg font-bold border-l-4 border-gray-900 pl-3">代表プロフィール</h3>
-                <p class="whitespace-pre-wrap text-gray-700 leading-relaxed text-sm md:text-base">▼代表取締役／入江 雄介 氏
-【経歴】
-株式会社リクルートを経て、2019年にコクー株式会社を設立。経営者としての高い視座と、「人を活かす」組織づくりに徹底的にこだわる姿勢が評価され、社外アドバイザーやパートナー企業からの信頼も厚い。企業文化・働き方改革の旗振り役としても注目されている。</p>
-            </div>
-
-            <div class="bg-gray-50 border border-gray-200 rounded-lg p-5 space-y-6">
-                <h3 class="text-lg font-bold text-gray-900 border-b border-gray-200 pb-2">JOB情報</h3>
-                <div class="space-y-4">
-                    <div>
-                        <h4 class="text-sm font-bold text-gray-500 uppercase tracking-wider mb-1">業務内容</h4>
-                        <p class="whitespace-pre-wrap text-sm text-gray-700 leading-relaxed">【ミッション】
-「コクーの成長ロジックを、投資家が“買いたくなる言語”に翻訳し、時価総額100億円以上でのIPOを実現する」
-
-財務マネージャーが管理会計・月次運用を担う体制が整っているため、本ポジションでは経理オペレーションではなく、資本市場との対話を通じた企業価値最大化がミッションとなります。
-DX人財輩出企業としてのコクーの価値を、財務戦略・エクイティストーリー・IR活動を通じて市場へ正しく伝え、PER向上を牽引していただきます。
-
-【業務内容】
-
-■ 財務戦略立案
-・経営戦略と連動した中長期財務計画（3〜5年）の策定・推進
-・BS／PL／CF連動モデルの構築・高度化（100億円IPOからの逆算設計）
-・財務KPIの設計およびモニタリング体制の構築
-・取締役会／株主向け財務報告、ファシリテーション対応
-
-■ エクイティストーリー構築・IR
-・「DX人財 × 女性活躍 × VISION2030」を軸としたエクイティストーリー設計
-・人材／HRTech／SaaS領域の類似上場企業分析（PER・EV/EBITDA等）
-・主幹事証券、機関投資家、アナリストとのリレーション構築
-・ロードショー、IR資料、Ⅰの部等の作成・推進
-
-■ IPO推進
-・主幹事証券選定、証券会社ヒアリング対応
-・ショートレビュー、Ⅰの部、上場申請準備の推進
-・監査法人・法務と連携した内部統制／開示体制構築
-・資本政策設計（創業者持分、SO設計、希薄化シミュレーション等）
-
-■ 資金調達
-・エクイティ／デットを組み合わせた資金調達戦略立案
-・銀行、VC、PEファンド等との条件交渉、コベナンツ管理
-・IPOを見据えたバランスシート最適化
-
-■ M&A・アライアンス（中長期）
-・VISION2030実現に向けた戦略的M&Aの検討
-・対象企業のバリュエーション、PMI連携支援
-・業務提携100社構想に向けた財務的スクリーニング</p>
-                    </div>
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm">
-                        <div><span class="font-bold text-gray-600 block mb-1">応募資格・詳細</span><p class="text-gray-700 whitespace-pre-wrap">■ MUST｜必須要件
-【IPO実務経験】
-・N-3フェーズ以降〜IPO完了までの上場準備経験
-・主幹事証券、監査法人との折衝を主体者として担った経験
-
-【資金調達経験】
-・エクイティ調達（VC／PE／プレIPOラウンド等）またはデット調達（銀行融資、シンジケートローン等）の実行経験
-・投資家・金融機関との条件交渉経験
-
-【財務モデリング】
-・BS／PL／CFの3表連動による中長期財務モデルをレビュー・改善できるスキル
-※モデルをゼロから構築した経験は不問
-
-【経営参謀経験】
-・CFOまたはCFOに準ずるポジションで、CEOと経営意思決定を推進した経験
-・経営戦略と財務戦略を接続して議論できる能力
-
-■ NICE｜歓迎要件
-【エクイティストーリー構築】※基本は入江社長が担当する
-・投資家向けに成長戦略やバリュエーション根拠を定量的に設計・発信した経験
-・IR戦略立案および資本市場とのコミュニケーション経験
-
-【M&A実務経験】
-・小〜中規模M&Aにおけるバリュエーション、DD、PMI等の経験
-
-【人材業界知見】
-・人材派遣、SES、HRTech等のビジネスモデル理解
-・人的資本ビジネスに対する財務視点での理解
-
-【DX領域への理解】
-・DX関連事業の成長性や財務価値を説明できる知見
-・デジタル変革領域への事業理解
-
-【スタートアップ経験】
-・シリーズB以降、またはIPO準備フェーズのスタートアップにおけるCFO／財務責任者経験</p></div>
-                        <div><span class="font-bold text-gray-600 block mb-1">求める人物像</span><p class="text-gray-700 whitespace-pre-wrap">■ カルチャーフィット／MVV共感
-・コクーのMVV（DX人財輩出・女性活躍）に共感し、自分の言葉で語れる方
-・「上場後の運営」ではなく、「上場を設計する」ことに魅力を感じる方
-・N-3フェーズの仕組みづくりにやりがいを感じられる方
-
-■ ソーシャルスキル
-・CEOと対等に議論し、数字をもとに提言できる参謀型人材
-・主幹事証券、監査法人、機関投資家との高い折衝能力
-・社内の経営陣・財務マネージャーと信頼関係を築けるコミュニケーション力
-
-■ 専門性・戦略性
-・エクイティストーリーをゼロから設計した経験
-・財務三表を投資家視点で分析し、バリュエーションを説明できる能力
-・IPO実現またはIPO支援における豊富な実務経験</p></div>
-                        <div><span class="font-bold text-gray-600 block mb-1">勤務地</span><p class="text-gray-700">東京</p></div>
-                        <div><span class="font-bold text-gray-600 block mb-1">リモートワーク</span><p class="text-gray-700">ハイブリッド勤務</p></div>
-                        <div><span class="font-bold text-gray-600 block mb-1">副業</span><p class="text-gray-700">可</p></div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="space-y-3">
-                <h3 class="text-xs font-bold text-gray-400 uppercase tracking-wider">外部リンク</h3>
-                <div class="flex flex-wrap gap-3">
-                    <a href="https://cocoo.co.jp/" target="_blank" class="inline-flex items-center gap-1.5 text-xs font-bold bg-gray-100 hover:bg-gray-200 text-gray-700 px-3 py-2 rounded transition-colors">コーポレートサイト <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg></a>
-                    <a href="https://cocoo.co.jp/news/3125/" target="_blank" class="inline-flex items-center gap-1.5 text-xs font-bold bg-gray-100 hover:bg-gray-200 text-gray-700 px-3 py-2 rounded transition-colors">社外役員就任ニュース <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg></a>
-                    <a href="https://www.delphi-consulting.com/case/2022/2025/?utm_source=chatgpt.com" target="_blank" class="inline-flex items-center gap-1.5 text-xs font-bold bg-gray-100 hover:bg-gray-200 text-gray-700 px-3 py-2 rounded transition-colors">関連ニュース資料 <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg></a>
-                </div>
-            </div>
-        </section>
-
-        <section id="company-8" class="bg-white rounded-xl shadow-sm border border-gray-200 p-6 md:p-10 space-y-8 scroll-mt-36">
-            <div class="space-y-3">
-                <div class="flex flex-wrap gap-2">
-                    <span class="bg-gray-800 text-white text-xs font-bold px-2.5 py-1 rounded">CFO候補</span>
-                    <span class="bg-morich text-white text-xs font-bold px-2.5 py-1 rounded">N-1</span>
-                </div>
-                <h2 class="text-3xl md:text-4xl font-black text-gray-900 tracking-tight">株式会社NEXT ONE（ネクストワン）</h2>
-            </div>
-
-            <div class="bg-overviewBg rounded-lg p-5">
-                <h3 class="text-xs font-bold text-gray-500 uppercase tracking-wider mb-3">Corporate Overview</h3>
-                <div class="overflow-x-auto">
-                    <table class="w-full text-sm text-left">
-                        <tbody>
-                            <tr class="border-b border-gray-200"><th class="py-2.5 w-32 font-bold text-gray-600">本社住所</th><td class="py-2.5 text-gray-900">〒150-0002 東京都渋谷区渋谷3-3-5 NBF渋谷イースト3F</td></tr>
-                            <tr class="border-b border-gray-200"><th class="py-2.5 font-bold text-gray-600">設立</th><td class="py-2.5 text-gray-900">2007年6月</td></tr>
-                            <tr class="border-b border-gray-200"><th class="py-2.5 font-bold text-gray-600">従業員数</th><td class="py-2.5 text-gray-900"></td></tr>
-                            <tr><th class="py-2.5 font-bold text-gray-600">上場区分</th><td class="py-2.5 text-gray-900">未上場（2027年上場予定）</td></tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-
-            <div class="space-y-4">
-                <h3 class="text-lg font-bold border-l-4 border-gray-900 pl-3">企業紹介</h3>
-                <p class="whitespace-pre-wrap text-gray-700 leading-relaxed text-sm md:text-base">2007年6月設立。
-時代の変化とともに多様化する社会課題に対応し、新たな事業を創造し続ける「事業創出企業」。
-代表取締役社長・斉藤徹氏が24歳で創業し、2027年の上場予定（N-1フェーズ）にあります。
-創業当初は光ファイバー回線代理店事業からスタートし2019年、自社サービスとして「電力サービス」を立ち上げ、ストック型ビジネスへ転換。
-現在は約8万ユーザーが利用し、売上100億円規模／営業利益十数億円を達成しています。
-2024年4月には、代表自身が強い想いを持つ「障害者雇用支援ビジネス」を新規事業として始動。
-単なる雇用ではなく、障がいを持つ方々が“成長を実感できる仕事”を提供することを目的としています。
-新百合ヶ丘に設立した1,000坪の植物工場では、イチゴ・メロン・コチョウランなど高付加価値作物を栽培。
-障がい特性に応じた業務を設計し、最低賃金を上回る報酬水準を実現する仕組みを構築中です。
-同社は利益追求と社会貢献を両立する企業として、仕組み化・効率化・DX・AI化を強みとし、
-少数精鋭で高い生産性を実現しています。2030年に向けて営業利益120億円規模を目標に事業拡大を推進中です。
-
-■ 事業の特徴・差別化
-【電力事業】
-・若年層（20代中心）に選ばれる電力サービスを展開。
-・料金は地域電力よりやや高いが、サポート品質（電話即応／土日対応）が高く評価。
-・今後はNetflix・家電など付帯サービスのバンドルでLTV向上を狙う。
-
-【障害者雇用支援事業】
-・企業が雇用した障がい者がNEXT ONE運営の農園で就業。
-・法定雇用率引き上げにより需要が拡大。スピードと生産性で高評価を獲得。</p>
-            </div>
-
-            <div class="border-2 border-morich bg-morich/5 rounded-lg p-5 md:p-6 space-y-3">
-                <h3 class="text-morich text-lg font-black tracking-wider flex items-center gap-2">★ morichオススメPoint</h3>
-                <p class="whitespace-pre-wrap text-gray-800 text-sm md:text-base font-medium">売上100億円規模、営業利益十数億円を達成している非常に強固なビジネス基盤を持つ企業です。2027年の上場（N-1フェーズ）に向けて、さらに2030年には営業利益120億円規模という野心的な成長目標を掲げています。主力である安定したストック型の電力事業に加え、社会的要請の非常に高い「障害者雇用支援ビジネス」へのダイナミックな垂直立ち上げなど、利益追求と社会貢献を高いレベルで両立する独自の「第二創業期」に参画できるエキサイティングな求人です。</p>
-            </div>
-
-            <div class="space-y-4">
-                <h3 class="text-lg font-bold border-l-4 border-gray-900 pl-3">代表プロフィール</h3>
-                <p class="whitespace-pre-wrap text-gray-700 leading-relaxed text-sm md:text-base">代表取締役社長 斉藤 徹 氏
-1982年10月千葉県生まれ。グロービス経営大学院経営学研究科修了（MBA）。
-通信関連サービス会社で最年少支店長に昇格し、札幌支店の立ち上げで1年以内に業績を急拡大。
-「関わった人の人生を変えられる会社をつくりたい」との想いから2006年に独立。
-2007年, 株式会社NEXT ONEを設立。
-論理的アプローチと仕組み化・効率化を通じ、社会課題を解決する“社会貢献型ビジネス”を展開中。</p>
-            </div>
-
-            <div class="bg-gray-50 border border-gray-200 rounded-lg p-5 space-y-6">
-                <h3 class="text-lg font-bold text-gray-900 border-b border-gray-200 pb-2">JOB情報</h3>
-                <div class="space-y-4">
-                    <div>
-                        <h4 class="text-sm font-bold text-gray-500 uppercase tracking-wider mb-1">業務内容</h4>
-                        <p class="whitespace-pre-wrap text-sm text-gray-700 leading-relaxed">■財務・資本戦略の策定と実行
- ・資本政策の立案および実行（IPO準備を含む）
- ・資金調達（デット／エクイティ）戦略の設計と実行
-■ステークホルダー・マネジメント
- ・証券会社・監査法人・投資家・金融機関との信頼構築および折衝
- ・IR戦略の立案・実行（上場後を見据えたストーリー構築）
-■経営管理・ガバナンスの高度化
- ・財務報告・決算体制の整備および内部統制の構築
- ・予算統制・予実分析・KPI設計による経営意思決定支援
-■戦略的投資・組織開発
- ・M&Aの検討、実行支援、およびPMIの推進
- ・財務・経理部門の組織設計・採用・育成
-
-
-メッセージ
-現在のNEXT ONEは、まさに第二の創業期とも言える変化の真っ只中にあります。 私たちが目指すのは、単なる事業拡大ではありません。テクノロジーと戦略を武器に、社会に「次なる当たり前」を実装していくことです。今、このフェーズで参画いただくCFOにお任せしたいのは、用意された席に座ることではなく、自らの手で「勝てる財務基盤」を築き上げることです。
-環境は決して整っているとは言えません。難題も多く、時にタフな判断が求められることもあるでしょう。しかし、だからこそ、あなたの専門性と決断がダイレクトに企業の成長曲線を描き、社会を変える力へと直結します。
-「管理のスペシャリスト」から、事業を動かす「経営の当事者」へ。
-IPOという大きなマイルストーンを越え、その先の未来までも共に描いていける。そんな志を同じくするパートナーとして、あなたをお迎えしたいと考えています。
-NEXT ONEという舞台を使って、あなたのキャリアにおける「最高傑作」を、私たちと一緒に創り上げませんか。
-
-
-※元CFO鳥羽様は現在本人の意向もあり事業統括として2事業を管掌されています。</p>
-                    </div>
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm">
-                        <div><span class="font-bold text-gray-600 block mb-1">応募資格・詳細</span><p class="text-gray-700 whitespace-pre-wrap">必須要件
- スナンダードからプライムへの市場変更経験、資金調達経験、M&A経験など</p></div>
-                        <div><span class="font-bold text-gray-600 block mb-1">求める人物像</span><p class="text-gray-700 whitespace-pre-wrap">・成長フェーズの企業で、組織づくりに深く関わりたい方
-…50〜100名規模の組織での挑戦に興味があり、変化を楽しみながら柔軟に対応できる方。
-
-・ゼロから価値を創り出すことに情熱を持てる方
-…前例のない課題にも果敢に挑戦し、仕組みや文化を自ら構築していくことにやりがいを感じられる方。</p></div>
-                        <div><span class="font-bold text-gray-600 block mb-1">勤務地</span><p class="text-gray-700">東京</p></div>
-                        <div><span class="font-bold text-gray-600 block mb-1">リモートワーク</span><p class="text-gray-700">基本出社</p></div>
-                        <div><span class="font-bold text-gray-600 block mb-1">副業</span><p class="text-gray-700">不可</p></div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="space-y-3">
-                <h3 class="text-xs font-bold text-gray-400 uppercase tracking-wider">外部リンク</h3>
-                <div class="flex flex-wrap gap-3">
-                    <a href="https://nx1.co.jp/" target="_blank" class="inline-flex items-center gap-1.5 text-xs font-bold bg-gray-100 hover:bg-gray-200 text-gray-700 px-3 py-2 rounded transition-colors">コーポレートサイト <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg></a>
-                    <a href="https://drive.google.com/file/d/13m0z9a6RzSojAuwiiw7aQJ16VIUkDdtE/view?usp=sharing" target="_blank" class="inline-flex items-center gap-1.5 text-xs font-bold bg-gray-100 hover:bg-gray-200 text-gray-700 px-3 py-2 rounded transition-colors">紹介資料（Google Drive） <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg></a>
-                </div>
-            </div>
-        </section>
-
-    </main>
-
-    <footer class="bg-gray-900 text-gray-400 text-center py-8 border-t border-gray-800 text-xs">
-        <p>© morich Co., Ltd. All Rights Reserved.</p>
-    </footer>
-
-</body>
-</html>
+                    <div class="border-t border-gray-100 pt-6 mb-6">
+                        <h3 class="text-lg font-bold text-gray-900 mb-4 flex items-center">
+                            <span class="inline-block w-2 h-4 bg-morichRed mr-2 rounded-sm"></span>募集ポジション：【CEO直下】経営企画マネージャー
+                        </h3>
+                        <div class="bg-slate-5
